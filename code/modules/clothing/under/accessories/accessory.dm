@@ -672,6 +672,12 @@
 	desc = "Insignia denoting assignment to the service department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
+//wo - doesn't exist :)
+/obj/item/clothing/accessory/rank/fleet/officer/cwo2
+	name = "ranks (CWO-2)"
+	desc = "Insignia denoting the elusive rank of Warant Officer."
+	icon_state = "fleetrank_officer"
+
 
 //Necklaces
 /obj/item/clothing/accessory/necklace

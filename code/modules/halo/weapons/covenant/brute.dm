@@ -402,10 +402,10 @@
 		grensleft -= 1
 
 /obj/item/weapon/grenade/toxic_gas
-	name = "toxic gas grenade"
-	icon_state = "banana"
+	name = "VX-7 grenade"
+	icon_state = "frag"
 	item_state = "grenade"
-	desc = "A chemical smoke grenade made from gasses toxic to carbon based lifeforms."
+	desc = "A grenade designed to spill VX-7 into an area when detonated. Very dangerous."
 
 /obj/item/weapon/grenade/toxic_gas/New()
 	. = ..()
@@ -413,7 +413,7 @@
 	reagents.add_reagent(/datum/reagent/toxin/phoron, 500)
 
 /obj/item/weapon/grenade/toxic_gas/detonate()
-	playsound(src.loc, 'sound/effects/bamf.ogg', 50, 1)
+	playsound(src.loc, 'sound/effects/smoke.ogg', 50, 1)
 
 	var/datum/effect/effect/system/smoke_spread/chem/poison_gas = new()
 	poison_gas.set_up(reagents, 10, 0, src.loc)
@@ -437,3 +437,10 @@
 
 /obj/item/weapon/grenade/toxic_gas/carbon_monodixe
 	name = "carbon monodixe gas grenade"
+
+//temp container
+/obj/item/weapon/storage/box/vx7
+	name = "box of chemical grenades"
+	desc = "A box containing 7 grenades. A gas mask is printed on the label.<br> WARNING: Exposure carries risk of death."
+	icon_state = "flashbang"
+	startswith = list(/obj/item/weapon/grenade/toxic_gas = 7)

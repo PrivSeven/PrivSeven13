@@ -37,3 +37,9 @@
 	starting_accessories = list(\
 		/obj/item/clothing/accessory/rank/marine/enlisted/e7,\
 		/obj/item/clothing/accessory/badge/tags)
+
+/decl/hierarchy/outfit/job/unsc/marine/cwo2
+	name = "Marine Gunnery Sergeant (CWO-2)"
+	starting_accessories = list(\
+		/obj/item/clothing/accessory/rank/fleet/officer/cwo2,\
+		/obj/item/clothing/accessory/badge/tags)

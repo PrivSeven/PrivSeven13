@@ -17,14 +17,10 @@
 	alt_titles = list()
 
 /datum/job/unsc/marine/specialist
-	title = "Marine Specialist"
+	title = "Marine Corporal"
 	total_positions = 2
 	spawn_positions = 2
-	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e3
-	alt_titles = list(
-	"Light Machine Gunner Marine",\
-	"Scout Sniper Marine",\
-	"Anti-Tank Marine")
+	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e4
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
 
 /datum/job/unsc/marine/squad_leader
@@ -44,5 +40,5 @@
 	total_positions = 1
 	spawn_positions = 1
 	economic_modifier = 1.5
-	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e7
+	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/cwo2
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
