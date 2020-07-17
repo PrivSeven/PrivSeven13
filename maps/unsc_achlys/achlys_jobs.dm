@@ -31,7 +31,7 @@ GLOBAL_LIST_EMPTY(achlys_prison_spawns)
 	title = "Prisoner"
 	total_positions = 10
 	spawn_positions = 10
-	poplock_divisor = 5
+//	poplock_divisor = 5
 	selection_color = "#800080"
 	outfit_type = /decl/hierarchy/outfit/job/unsc_achlys/prisoner
 	whitelisted_species = list(/datum/species/human)
@@ -67,12 +67,38 @@ GLOBAL_LIST_EMPTY(dante_enlisted_spawns)
 	access = list(142)
 	spawnpoint_override = "Dante Enlisted"
 	latejoin_at_spawnpoints = TRUE
-	intro_blurb = "You are a Marine. The lowest rank in the branch, your objective is to follow the orders of your Commander and Squad Leader. Cole Protocol must be enacted on the UNSC Achlys resulting in the destruction of two nav consoles. Survival is not guaranteed."
+	intro_blurb = "You are a Marine. The lowest rank in the branch, your objective is to follow the orders of your superiors. Await briefing before getting geared. Survival is not guaranteed."
+
+/datum/job/achlys/ce
+	title = "Chief Engineer"
+	total_positions = 1
+	spawn_positions = 1
+	account_allowed = 1
+	selection_color = "#A0582F"
+	outfit_type = /decl/hierarchy/outfit/job/unsc_achlys/SOF
+	whitelisted_species = list(/datum/species/human)
+	access = list(142,143,144,145)
+	spawnpoint_override = "Dante Officer"
+	latejoin_at_spawnpoints = TRUE
+	intro_blurb = "You're currently the only Engineer taken out of cryo, and for good reasons. You're the most experienced of all of your crew. Ensure that the vessel doesn't fall apart."
+
+/datum/job/achlys/cmo
+	title = "Chief Medical Officer"
+	total_positions = 1
+	spawn_positions = 1
+	account_allowed = 1
+	selection_color = "#3F3875"
+	outfit_type = /decl/hierarchy/outfit/job/unsc_achlys/SOF
+	whitelisted_species = list(/datum/species/human)
+	access = list(142,143,144,145)
+	spawnpoint_override = "Dante Officer"
+	latejoin_at_spawnpoints = TRUE
+	intro_blurb = "You're the only Medical Officer currently present, and as such have complete authority over 'Medics' and anyone in your Medbay. Advise the Captain on matters that fall under your job description."
 
 /datum/job/achlys/marine/operative
 	title = "ONI Operative"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#0A0A95"
 	account_allowed = 1
 	outfit_type = /decl/hierarchy/outfit/job/unsc_achlys/operative
@@ -80,7 +106,7 @@ GLOBAL_LIST_EMPTY(dante_enlisted_spawns)
 	access = list(142)
 	spawnpoint_override = "Dante Enlisted"
 	latejoin_at_spawnpoints = TRUE
-	intro_blurb = "You are an ONI Operative disguised as a marine. Do not allow anyone else to know your true identity. Your job is to kill anyone who sets foot on the UNSC Achlys after you sit through a briefing and collect your loadout. There must be no survivors and you are considered expendable. You must complete your mission of retrieving the documents to the blackbox in Prep and eliminating all witnesses to the events onboard the Achlys. Execute with extreme prejudice."
+	intro_blurb = "You are an ONI Field Operative disguised as a marine. Do not allow anyone else to know your true identity. Your job is to kill anyone who sets foot on the UNSC Achlys after you sit through a briefing and collect your loadout. There must be no survivors and you are considered expendable. Destroy or secure mission sensitive data aboard the prison, and eliminate all witnesses to the events onboard the Achlys. Secured information should go into the lockbox in Brief. Godspeed, Operative."
 
 /datum/job/achlys/SL
 	title = "Squad Leader"
@@ -90,10 +116,10 @@ GLOBAL_LIST_EMPTY(dante_enlisted_spawns)
 	account_allowed = 1
 	outfit_type = /decl/hierarchy/outfit/job/unsc_achlys/SL
 	whitelisted_species = list(/datum/species/human)
-	access = list(142,143)
+	access = list(142,143,145)
 	spawnpoint_override = "Dante Enlisted"
 	latejoin_at_spawnpoints = TRUE
-	intro_blurb = "You are the Squad Leader. Your job is to delegate tasks to marines and ensure they are doing their jobs when on the UNSC Achlys. Ensure they ride a pelican over after a possible briefing from the Commander and preparing with a loadout below the briefing room towards the aft of the ship."
+	intro_blurb = "You are the Squad Leader. Your job is to delegate tasks to marines and ensure they are doing their jobs when on the UNSC Achlys. Ensure they ride a pelican over after a possible briefing from the Commander."
 
 GLOBAL_LIST_EMPTY(dante_pilot_spawns)
 
@@ -123,13 +149,19 @@ GLOBAL_LIST_EMPTY(dante_pilot_spawns)
 	access = list(144)
 	spawnpoint_override = "Dante Pilot"
 	latejoin_at_spawnpoints = TRUE
-	intro_blurb = "You are a pilot. Your job is to fly one of the two dropships and transport the marines between the two ships. You may become makeshift messengers in the event of a comms malfunction. Do not die."
+	intro_blurb = "You are a pilot. Your job is to fly one of the dropships and transport the marines between the two vessels. You may become makeshift messengers in the event of a comms malfunction. Do not die."
+
+/obj/effect/landmark/start/dante_ai
+	name = "UNSC AI"
+
+/obj/effect/landmark/start/dante_ai
+	name = "Spartan IV"
 
 GLOBAL_LIST_EMPTY(dante_officer_spawns)
 
 /datum/spawnpoint/dante_officer
 	display_name =  "Dante Officer"
-	restrict_job = list("UNSC Dante CO")
+	restrict_job = list("UNSC CO","UNSC Ship Officer","Chief Medical Officer","Chief Engineer")
 
 /datum/spawnpoint/dante_officer/New()
 	..()
@@ -143,7 +175,7 @@ GLOBAL_LIST_EMPTY(dante_officer_spawns)
 	GLOB.dante_officer_spawns += loc
 
 /datum/job/achlys/CO
-	title = "UNSC Dante CO"
+	title = "UNSC CO"
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = "#0A0A95"
@@ -153,11 +185,25 @@ GLOBAL_LIST_EMPTY(dante_officer_spawns)
 	access = list(142,143,144,145)
 	spawnpoint_override = "Dante Officer"
 	latejoin_at_spawnpoints = TRUE
-	intro_blurb = "You are the Commander of the marine detachment aboard the UNSC Dante. Your objective is to make sure your marines destroy two navigation consoles on the UNSC Achlys and return research documents to the blackbox in the prep room. Expect communication issues and unknown hostiles. Do not die."
+	intro_blurb = "You are the Commander of the marine detachment aboard the vessel. Your objective is to make sure your marines destroy two navigation consoles on the UNSC Achlys and return research documents to be secured aboard. Expect communication issues and unknown hostiles. Do not die. \
+	Additionally, you've the worry of your troop's equipment, as recent conflict has left you unable to request resupply, and most of it is damaged or gutted of QoL material."
+
+/datum/job/achlys/SOF
+	title = "UNSC Ship Officer"
+	total_positions = 2
+	spawn_positions = 2
+	selection_color = "#0A0A95"
+	account_allowed = 1
+	outfit_type = /decl/hierarchy/outfit/job/unsc_achlys/SOF
+	whitelisted_species = list(/datum/species/human)
+	access = list(142,143,144,145)
+	spawnpoint_override = "Dante Officer"
+	latejoin_at_spawnpoints = TRUE
+	intro_blurb = " You're a member of the bridge crew, or at the very least a trusted individual under the Captain's watch. Try not to die, alongside listening to orders while also providing them."
 
 /datum/map/unsc_achlys
-	allowed_jobs = list(/datum/job/achlys/CO,/datum/job/achlys/pilot,/datum/job/achlys/SL,/datum/job/achlys/marine,/datum/job/achlys/marine/operative,/datum/job/achlys/prisoner,/datum/job/achlys/sangheili)
-	allowed_spawns = list("Dante Officer","Dante Pilot","Dante Enlisted","Achlys Prison")
+	allowed_jobs = list(/datum/job/unsc_ai,/datum/job/achlys/CO,/datum/job/achlys/SOF,/datum/job/achlys/ce,/datum/job/achlys/cmo,/datum/job/achlys/pilot,/datum/job/achlys/SL,/datum/job/achlys/marine,/datum/job/achlys/marine/operative,/datum/job/unsc/spartan_four,/datum/job/achlys/prisoner,/datum/job/achlys/sangheili)
+	allowed_spawns = list("Dante Officer","Dante Pilot","Dante Enlisted","Achlys Prison","UNSC AI")
 
 	species_to_job_whitelist = list(/datum/species/sangheili = list(/datum/job/achlys/sangheili))
 	species_to_job_blacklist = list(/datum/species/human = list(/datum/job/achlys/sangheili))

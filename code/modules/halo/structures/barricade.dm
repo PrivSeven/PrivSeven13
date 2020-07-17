@@ -22,7 +22,7 @@
 	icon_state = "barricade2"
 	flags = ON_BORDER
 	cover_rating = 50 //Lower intercept, higher health
-	maxHealth = 1200
+	maxHealth = 1200 //More health to compensate
 	loot_types = list(/obj/item/stack/material/plasteel)
 	repair_material_name = "plasteel"
 
@@ -41,13 +41,12 @@
 	icon = 'code/modules/halo/structures/structures.dmi'
 	icon_state = "fullbarricade"
 	flags = ON_BORDER
-	cover_rating = 95 //High intercept, low health
+	cover_rating = 95
 	maxHealth = 800 //Composite plasteel barrier
 	closerange_freefire = 1 //Has a firing slot, unlike the plasma barrier.
 	loot_types = list(/obj/item/stack/material/plasteel)
 	repair_material_name = "plasteel"
 	climbable = 0
-	anchored = 0//Has wheels that can be pulled out to move the barrier.
 
 /obj/structure/destructible/marine_barricade/update_icon()
 	. = ..()

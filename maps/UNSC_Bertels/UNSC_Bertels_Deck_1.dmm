@@ -9,13 +9,13 @@
 "ai" = (/turf/simulated/wall/r_wall,/area/corvette/unscbertels/deck1/officerquarters)
 "aj" = (/turf/simulated/wall/r_wall,/area/corvette/unscbertels/deck1/Officermess)
 "ak" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
-"al" = (/obj/structure/drop_pod_launchbay,/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
+"al" = (/obj/vehicles/drop_pod/escape_pod/bumblebee/north{tag = "icon-escape (WEST)"; icon_state = "escape"; dir = 8},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
 "am" = (/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
 "an" = (/obj/structure/grille,/obj/structure/window/reinforced/treated{tag = "icon-fwindow (SOUTHWEST)"; icon_state = "fwindow"; dir = 10},/obj/structure/cable/blue{icon_state = "4-8"},/turf/simulated/floor/tiled,/area/corvette/unscbertels/starboardbatterycontrol)
 "ao" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/corvette/unscbertels/starboardbatterycontrol)
 "ap" = (/obj/machinery/light/colored/blue{tag = "icon-blue1 (NORTH)"; icon_state = "blue1"; dir = 1},/turf/simulated/floor/tiled,/area/corvette/unscbertels/starboardbatterycontrol)
 "aq" = (/obj/structure/ladder,/obj/structure/sign/deck/first{pixel_y = 32},/turf/simulated/floor/tiled,/area/corvette/unscbertels/starboardbatterycontrol)
-"ar" = (/obj/structure/drop_pod_launchbay,/obj/vehicles/drop_pod/escape_pod/bumblebee/north{tag = "icon-escape (WEST)"; icon_state = "escape"; dir = 8},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
+"ar" = (/obj/vehicles/drop_pod/escape_pod/bumblebee/north{tag = "icon-escape (WEST)"; icon_state = "escape"; dir = 8},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "as" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/starboardhallway)
 "at" = (/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/starboardhallway)
 "au" = (/obj/machinery/shower,/turf/simulated/floor/tiled/freezer,/area/corvette/unscbertels/deck1/officerquarters)
@@ -29,7 +29,7 @@
 "aC" = (/obj/item/device/radio/intercom{dir = 1; icon_state = "intercom"; name = "intercom"; pixel_x = 0; pixel_y = -32; tag = "icon-intercom (NORTH)"},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
 "aD" = (/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
 "aE" = (/obj/machinery/power/apc{dir = 2; name = "APC"; pixel_y = -24},/obj/structure/cable/blue{icon_state = "0-4"},/obj/machinery/light/colored/orange,/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
-"aF" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo_lifepod{name = "Escape Pod"},/obj/structure/cable/blue{icon_state = "4-8"},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
+"aF" = (/obj/machinery/door/firedoor,/obj/structure/cable/blue{icon_state = "4-8"},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/starboardescape)
 "aG" = (/obj/structure/cable/blue{icon_state = "2-8"},/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/starboardhallway)
 "aH" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/holofloor/wood,/area/corvette/unscbertels/deck1/captainroom)
 "aI" = (/turf/simulated/floor/holofloor/wood,/area/corvette/unscbertels/deck1/captainroom)
@@ -375,7 +375,7 @@
 "hm" = (/obj/item/device/radio/intercom{name = "intercom"; pixel_y = 32},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "hn" = (/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "ho" = (/obj/structure/cable/blue{icon_state = "2-4"},/obj/machinery/light/colored/orange{tag = "icon-orange1 (NORTH)"; icon_state = "orange1"; dir = 1},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
-"hp" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo_lifepod{name = "Escape Pod"},/obj/structure/cable/blue{icon_state = "4-8"},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
+"hp" = (/obj/machinery/door/firedoor,/obj/structure/cable/blue{icon_state = "4-8"},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "hq" = (/obj/structure/cable/blue{icon_state = "1-8"},/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/porthallway)
 "hr" = (/obj/machinery/door/airlock/halo{name = "Crew Quarters"},/obj/machinery/door/firedoor,/obj/structure/cable/blue{dir = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/Crewquarters)
 "hs" = (/obj/structure/table/steel_reinforced,/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/structure/cable/blue,/obj/machinery/power/apc{dir = 2; name = "APC"; pixel_y = -24},/turf/simulated/floor/tiled/freezer,/area/corvette/unscbertels/deck1/crewbathroom)
@@ -389,11 +389,9 @@
 "hA" = (/obj/machinery/light/colored/blue,/turf/simulated/floor/tiled,/area/corvette/unscbertels/portbatterycontrol)
 "hB" = (/obj/structure/ladder,/obj/structure/sign/deck/first{pixel_y = -32},/turf/simulated/floor/tiled,/area/corvette/unscbertels/portbatterycontrol)
 "hC" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
-"hD" = (/obj/structure/drop_pod_launchbay,/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "hE" = (/obj/structure/cable/blue{dir = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "hF" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/porthallway)
 "hG" = (/obj/structure/cable/blue{dir = 2; icon_state = "1-2"},/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/Crewquarters)
-"hH" = (/obj/structure/drop_pod_launchbay,/obj/vehicles/drop_pod/escape_pod/bumblebee/north{tag = "icon-escape (WEST)"; icon_state = "escape"; dir = 8},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "hI" = (/obj/structure/cable/blue,/obj/machinery/power/apc{dir = 2; name = "APC"; pixel_y = -24},/turf/simulated/floor/plating,/area/corvette/unscbertels/deck1/portescape)
 "hJ" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/machinery/power/apc{dir = 2; name = "APC"; pixel_y = -24},/obj/structure/cable/blue,/turf/simulated/floor/tiled,/area/corvette/unscbertels/deck1/Crewquarters)
 "hK" = (/turf/simulated/wall/r_wall,/area/corvette/unscbertels/exterior)
@@ -470,8 +468,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababaaaaaaaaaaaaaaaaabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacadadadadadababababababababababababababababababababaaaaaaaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeacadadadadadababababababababababababababababababababaaaaaaaaaaaaaaaaababababababababababababababababababababababababababababababafafafafafafagagahahahahahahahahahaiaiaiaiaiaiaiaiajajajajajajajajabababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababacacadadadadadababababababababababababababababababababababababababababababababababababababababababababababababababababababababababakalalalamafagagahahahahahahahahahaiaiaiaiaiaiaiaiajajajajajajajajajabababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababaeacanaoapaqadababababababababababababababababababababababababababababababababababababababababababababababababababababababababababakaralalamafasatahahahahahahahahahauavaiauavaiauavajajajajajajajawajajababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababacacadadadadadababababababababababababababababababababababababababababababababababababababababababababababababababababababababababakamamamamafagagahahahahahahahahahaiaiaiaiaiaiaiaiajajajajajajajajajabababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababaeacanaoapaqadababababababababababababababababababababababababababababababababababababababababababababababababababababababababababakalamamamafasatahahahahahahahahahauavaiauavaiauavajajajajajajajawajajababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababacacaxayazaAadababababababababababababababababababababababababababababababababababababababababababababababababababababababababababafaBaCaDaEaFaGatahaHaIaJaKahaLaMahaNaOaiaNaOaiaNaOajaPaQaRaSajajaTajajajabababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababaeacadadadaUadababababababababababababababababababababababababababababababababababababababababababababababaVaVaVaVaVaVaVaVaVaVaVaVafafafafafafaWaXaYaIaIaIaIaZbabbahbcaiaibcaiaibcaiajbdbebfbgbhbibjajajajbkababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaablbmbnbnbnbmabababababababababababababbobpbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbrbrbruKaVaVaVztbtbtbtaVztaVaVaVaVbubvbwahbxbybzaIahahahahbAbBaibCbBaibCbBajbebebDbEajajajajajyQbkbkyQababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -491,8 +489,8 @@ aaaaaaaaaaaaaaaaaaaagngoeGfefDgpeGababababababababababababababbKabababababababab
 aaaaaaaaaaaaaaaaaaaaaagDeGeHeHeHeGabababababababababababababgEgFbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbrbrbrSWaVaVaVztaVaVaVaVaVaVaVaVaVgugvgHfJgIfJfJgIfJfJgJgxgKgxgLgxgxgMeCeSeSeSeSeSeSeCgNgOeCeCeCbkbkbkababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababgPgPgQgQgQgRgQababababababababababababababababababababababababababababababababababababababababababababababaVaVaVaVaVaVaVaVaVaVaVaVaVaVaVgSaVdZgTfrgUgVgWgXgYgVgZhagxfKhbfKhbfKhbeCeShchdhehchdeCeCeCeCeCeCbkababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababhfgPhghhhihjgQababababababababababababababababababababababababababababababababababababababababababababababababababababababababababhkhlhmhnhohphqeAfJgIfJfJhrfJfJhshtfKhufKhufKhueChvhchdhwhchxeCeCeCeCeCeCabababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababgPgPhyhzhAhBgQababababababababababababababababababababababababababababababababababababababababababababababababababababababababababhChDhDhDhEhkhFeAfJgwgbfJhGgbfJfKfKfKfKfKfKfKfKeCeCeCeCeCeCeCeCeCeCeCeCababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababhfgPgQgQgQgQgQababababababababababababababababababababababababababababababababababababababababababababababababababababababababababhChHhDhDhIhkdZdZfJgagbfJhJgbfJfKfKfKfKfKfKfKfKeCeCeCeCeCeCeCeCeCeCeCabababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababgPgPhyhzhAhBgQababababababababababababababababababababababababababababababababababababababababababababababababababababababababababhChnhnhnhEhkhFeAfJgwgbfJhGgbfJfKfKfKfKfKfKfKfKeCeCeCeCeCeCeCeCeCeCeCeCababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababhfgPgQgQgQgQgQababababababababababababababababababababababababababababababababababababababababababababababababababababababababababhCarhnhnhIhkdZdZfJgagbfJhJgbfJfKfKfKfKfKfKfKfKeCeCeCeCeCeCeCeCeCeCeCabababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagPgPgQgQgQgQhKababababababababababababababababababababaaaaaaaaaaaaaaaaababababababababababababababababababababababababababababababhkhkhkhkhkhkdZdZfJfJfJfJfJfJfJfKfKfKfKfKfKfKfKeCeCeCeCeCeCeCeCeCeCabababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahfgPgQgQgQgQhKababababababababababababababababababababaaaaaaaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababaaaaaaaaaaaaaaaaabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

@@ -176,9 +176,15 @@ obj/structure/closet/crate
 	name = "emergency rations"
 	desc = "A crate of emergency rations."
 
-
 /obj/structure/closet/crate/freezer/rations/WillContain()
 	return list(/obj/item/weapon/reagent_containers/food/snacks/liquidfood = 12)
+
+/obj/structure/closet/crate/freezer/mre //MREs. Not much else.
+	name = "MRE storage"
+	desc = "A crate of MRE sets."
+
+/obj/structure/closet/crate/freezer/mre/WillContain()
+	return list(/obj/item/weapon/storage/box/MRE/Chicken = 4, /obj/item/weapon/storage/box/MRE/Pizza = 4, /obj/item/weapon/storage/box/MRE/Spaghetti = 4, /obj/item/weapon/storage/box/donut = 2)
 
 /obj/structure/closet/crate/bin
 	name = "large bin"

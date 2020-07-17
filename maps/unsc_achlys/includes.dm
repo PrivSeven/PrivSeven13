@@ -8,12 +8,20 @@
 	#include "achlys_gm.dm"
 	#include "achlys_areas.dm"
 	#include "achlys_overmap.dm"
-	#include "unsc_dante_Z1.dmm"
-	#include "unsc_dante_Z2.dmm"
+//	#include "unsc_dante_Z1.dmm"
+//	#include "unsc_dante_Z2.dmm"
 	#include "unsc_achlys_Z1.dmm"
 	#include "unsc_achlys_Z2.dmm"
 	#include "unsc_achlys_Z3.dmm"
 	#include "unsc_achlys_Z4.dmm"
+
+	//other below
+	#include "../UNSC_Halberd_Class/areas.dm"
+	#include "../UNSC_Halberd_Class/overmap.dm"
+	#include "../UNSC_Halberd_Class/ai_items.dm"
+
+	#include "../UNSC_Halberd_Class/UNSC_Light_Brigade.dmm"
+	//end other
 
 	#include "../../code/modules/halo/lobby_music/flood.dm"
 

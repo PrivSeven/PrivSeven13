@@ -1,6 +1,6 @@
 /obj/effect/overmap/ship/unsclightbrigade
 	name = "UNSC Light Brigade"
-	desc = "Halberd Class Destroyer."
+	desc = "Halberd Class Destroyer. This one is visibly refitted, allowing the inclusion of two additional hangers."
 
 	icon = 'halberdclass_new.dmi'
 	icon_state = "ship"

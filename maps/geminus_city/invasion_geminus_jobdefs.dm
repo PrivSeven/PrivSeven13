@@ -8,21 +8,18 @@
 		/datum/job/unsc/marine/specialist,\
 		/datum/job/unsc/marine/squad_leader,\
 		/datum/job/unsc/marine/iwo,\
-/*		/datum/job/unsc/odst,\
-		/datum/job/unsc/odst/squad_leader,\*/
 		/datum/job/unsc/commanding_officer,\
 		/datum/job/unsc/executive_officer,\
-		/datum/job/unsc/oni/research,\
+		/datum/job/unsc_ai,\
+/*		/datum/job/unsc/oni/research,\
 		/datum/job/unsc/oni/research/director,\
 		/datum/job/unsc/oni/guard,\
-		/datum/job/unsc/oni/guard/commander,\
-		/datum/job/unsc_ai,\
+		/datum/job/unsc/oni/guard/commander,\*/
 		/datum/job/colonist,\
 		/datum/job/colonist/mayor,\
 		/datum/job/colonist/police,\
 		/datum/job/colonist/police/chief,\
-		/datum/job/colony_ai,\
-/*		/datum/job/covenant/huragok,\*/
+/*		/datum/job/colony_ai,\*/ //Disabled for playercount purposes, alongside the fact that it'd be a DumbAI most likely, not SmartAI.
 		/datum/job/covenant/AI,\
 		/datum/job/covenant/sangheili_minor,\
 		/datum/job/covenant/sangheili_major,\
@@ -34,17 +31,11 @@
 		/datum/job/covenant/unggoy_minor,
 		/datum/job/covenant/unggoy_major,\
 		/datum/job/covenant/unggoy_ultra,\
-/*		/datum/job/covenant/lesser_prophet,\
-		/datum/job/covenant/sangheili_honour_guard,\
-		/datum/job/covenant/unggoy_deacon,\
-		/datum/job/covenant/skirmcommando,\
-		/datum/job/covenant/brute_minor,\
-		/datum/job/covenant/brute_major,\
-		/datum/job/covenant/brute_captain,\*/
 		/datum/job/covenant/yanmee_minor,\
 		/datum/job/covenant/yanmee_major,\
 		/datum/job/covenant/yanmee_ultra,\
 		/datum/job/covenant/yanmee_leader,\
+		/datum/job/covenant/huragok,\
 		)
 
 	allowed_spawns = list(\

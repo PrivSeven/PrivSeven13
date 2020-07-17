@@ -17,7 +17,7 @@
 	company_name  = "United Nations Space Command"
 	company_short = "UNSC"
 	system_name = "Soell System"
-	overmap_size= 2
+	overmap_size= 12
 
 	use_overmap = 1
 	allowed_gamemodes = list("achlys")

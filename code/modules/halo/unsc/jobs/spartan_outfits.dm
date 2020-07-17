@@ -15,13 +15,10 @@
 
 /decl/hierarchy/outfit/spartan_four
 	name = "Spartan IV"
-	uniform = /obj/item/clothing/under/spartan_internal
-	suit = /obj/item/clothing/suit/armor/special/spartan/gen2
-	gloves = /obj/item/clothing/gloves/spartan
-	shoes = /obj/item/clothing/shoes/magboots/spartan
-	head = /obj/item/clothing/head/helmet/spartan/gen2
+	uniform = /obj/item/clothing/under/spartan_internal/gen2
 	l_ear = /obj/item/device/radio/headset/unsc/spartan
 	suit_store = /obj/item/weapon/tank/emergency/oxygen/double
+	back = /obj/item/weapon/rig/spartan/mjolnir_recruit
 	starting_accessories = list(/obj/item/clothing/accessory/rank/marine/officer/spartan)
 	pda_slot = null
 	pda_type = null

@@ -53,6 +53,8 @@
 /obj/item/weapon/reagent_containers/glass/bottle/floodtox
 	name = "Bottled Unknown Biological Contaminant"
 	desc = "A bottle of some unknown biological material, composed of spores floating in a dark-green tinted liquid. A label states: Organism critical mass threshold: 27u."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "vial"
 
 	New()
 		. = ..()

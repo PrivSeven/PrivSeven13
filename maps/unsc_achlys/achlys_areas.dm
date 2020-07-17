@@ -35,7 +35,7 @@
 #define ASTEROID CAVE
 #define SPACE UNDERWATER
 /area/dante
-	requires_power = 0
+	requires_power = 1//temp enable
 	has_gravity = 1
 	base_turf = /turf/simulated/floor/plating
 

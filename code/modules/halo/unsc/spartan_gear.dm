@@ -77,6 +77,14 @@
 
 	. = ..()
 
+/obj/item/organ/internal/lungs/spartan_four
+	name = "Augmented Lungs"
+	desc = "These augmented lungs have been enhanced with nanites which allow for tougher membranes as well as the implantee needing half of a normal person's air pressure to survive. Atop that, it can filter out airborne contaminants."
+	min_breath_pressure = 8
+	max_damage = 90
+	min_bruised_damage = 35
+	min_broken_damage = 60
+
 /obj/item/organ/internal/heart/spartan
 	name = "enhanced heart"
 	desc = "a dense mass of muscle, vaugely resembling a heart"

@@ -1,10 +1,10 @@
 /obj/item/weapon/tank/phoron/innie
-	name = "Freedom flamethrower tank"
+	name = "flamethrower tank"
 	icon = 'code/modules/halo/factions/npc_factions/gear/flp.dmi'
 	icon_state = "flt_tank"
 
 /obj/item/weapon/flamethrower/innie
-	name = "Freedom flamethrower"
+	name = "flamethrower"
 	icon = 'code/modules/halo/factions/npc_factions/gear/flp.dmi'
 	icon_state = "flt_flammer_off"
 

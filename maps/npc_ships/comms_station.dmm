@@ -2,9 +2,8 @@
 "aG" = (/obj/structure/table/steel,/turf/simulated/floor/shuttle/blue,/area/om_ships/comms_station/station1)
 "aP" = (/obj/docking_umbilical/south,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "bw" = (/obj/structure/closet/secure_closet/miner,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
-"bC" = (/turf/simulated/floor/shuttle/white,/area/om_ships/comms_station/station1)
 "bO" = (/mob/living/simple_animal/hostile/russian,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
-"cI" = (/obj/structure/barricadeunsc,/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
+"cI" = (/obj/structure/destructible/marine_barricade,/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "eJ" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/asteroid,/area/space)
 "fd" = (/obj/structure/window/reinforced/projresist{dir = 8},/obj/structure/window/reinforced/projresist{dir = 4},/obj/structure/window/reinforced/projresist{dir = 2},/obj/structure/grille,/turf/simulated/floor/plating,/area/om_ships/comms_station/station1)
 "ft" = (/obj/machinery/door/airlock/glass,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
@@ -13,7 +12,7 @@
 "iH" = (/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "kp" = (/obj/machinery/light/spot,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
 "mM" = (/turf/simulated/mineral,/area/space)
-"nz" = (/obj/structure/tanktrap,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
+"nz" = (/obj/structure/destructible/tanktrap,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "pC" = (/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/water/shallow,/area/om_ships/comms_station/station1)
 "rf" = (/obj/machinery/light/spot,/turf/simulated/floor/shuttle/blue,/area/om_ships/comms_station/station1)
 "sh" = (/turf/simulated/floor/beach/sand/desert,/area/space)
@@ -22,7 +21,7 @@
 "tS" = (/obj/structure/window/basic{dir = 8},/turf/simulated/floor/water/shallow,/area/om_ships/comms_station/station1)
 "uk" = (/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/shuttle/blue,/area/om_ships/comms_station/station1)
 "ut" = (/obj/structure/closet/wardrobe/lawyer_black,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
-"uv" = (/obj/machinery/door/airlock/maintenance_hatch/bolted,/turf/simulated/floor/shuttle/white,/area/om_ships/comms_station/station1)
+"uv" = (/turf/simulated/floor/shuttle/white,/area/om_ships/comms_station/station1)
 "wq" = (/obj/structure/bed,/mob/living/simple_animal/hostile/russian,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
 "wv" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
 "xj" = (/mob/living/simple_animal/hostile/russian/ranged,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
@@ -32,7 +31,7 @@
 "Ea" = (/obj/structure/closet/wardrobe/engineering_yellow,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
 "FV" = (/turf/simulated/floor/water/shallow,/area/om_ships/comms_station/station1)
 "Gi" = (/obj/structure/curtain/open,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
-"Gr" = (/obj/structure/barricadeunsc{dir = 4},/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
+"Gr" = (/obj/structure/destructible/marine_barricade{dir = 4},/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "Hc" = (/obj/structure/bed,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
 "Hl" = (/obj/machinery/telecomms/relay/ship_relay,/turf/simulated/floor/shuttle/blue,/area/om_ships/comms_station/station1)
 "Ht" = (/obj/structure/closet/wardrobe/mixed,/turf/simulated/floor/shuttle/yellow,/area/om_ships/comms_station/station1)
@@ -46,7 +45,7 @@
 "NH" = (/obj/structure/window/basic{dir = 8},/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/water/shallow,/area/om_ships/comms_station/station1)
 "Or" = (/obj/structure/window/reinforced/projresist{dir = 8},/obj/structure/window/reinforced/projresist{dir = 4},/obj/structure/window/reinforced/projresist{dir = 1},/obj/structure/grille,/turf/simulated/floor/plating,/area/om_ships/comms_station/station1)
 "Pr" = (/obj/machinery/telecomms/allinone,/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/shuttle/blue,/area/om_ships/comms_station/station1)
-"Rp" = (/obj/structure/barricadeunsc,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
+"Rp" = (/obj/structure/destructible/marine_barricade,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "Rz" = (/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "SG" = (/mob/living/simple_animal/hostile/russian/ranged,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
 "SY" = (/mob/living/simple_animal/hostile/russian,/turf/simulated/floor/shuttle/black,/area/om_ships/comms_station/station1)
@@ -85,9 +84,9 @@ aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmM
 aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMNfRzRzSGGrRzRzRzRzZoRzRzRzRzRzRzZoSGGrRzRzRzRzRzRzRzRzNfbCtSzfzfzfFVFVNfmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMNfIIRzSGRzRzRzRzRzRzRzRzRzRzGrRzRzSGGrRzRzRzRzRzRzRzSYftbCNHzfzfzfzfpCNfmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMNfRzRzSGGrRzRzRzRzUdRzRzRzSGGrRzUdRznzRzRzRzRzUdRzRzRzNfbCtSFVzfzfzfzfNfmMmMaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMNfRzRzSGGrRzRzRzRzZoRzRzRzRzRzRzZoSGGrRzRzRzRzRzRzRzRzNfuvtSzfzfzfFVFVNfmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMNfIIRzSGRzRzRzRzRzRzRzRzRzRzGrRzRzSGGrRzRzRzRzRzRzRzSYftuvNHzfzfzfzfpCNfmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMNfRzRzSGGrRzRzRzRzUdRzRzRzSGGrRzUdRznzRzRzRzRzUdRzRzRzNfuvtSFVzfzfzfzfNfmMmMaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMZZZZRzRzZZZZZZZZZZZZZZZZNfNfNfNfNfNfNfNfNfNfNfNfcIRzRpNfNfNfNfNfNfNfNfNfmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMZZCKCKCKCKCKKMCKCKCKCKZZZiZiZiZiZiTOZiZiZiZiZiNfRzRzRzNfYXYXYXTOUaUaNfmMmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaamMmMmMmMmMmMmMmMmMmMmMmMmMZZCKCKCKCKCKCKCKCKCKCKuvZiZiZiZiZiZiZiZiZiZiZiNfRzRzRzftZiZiZiZiGiHcNfmMmMaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -137,4 +136,3 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
-

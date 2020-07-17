@@ -120,3 +120,7 @@
 /area/destroyer/unsclightbrigade/forestarboardaircleaner
 	name = "UNSC Light Brigade Fore Starboard Air Cleaner"
 	icon_state = "green"
+
+/area/destroyer/unsclightbrigade/suppod
+	name = "UNSC Light Brigade Supply Pod Chamber"
+	icon_state = "green"

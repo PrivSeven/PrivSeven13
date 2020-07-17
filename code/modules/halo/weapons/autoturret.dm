@@ -172,3 +172,15 @@
 	desc = "An automatic turret with integrated forerunner technology for ammunition manufacturing and long-range targeting."
 	icon = 'code/modules/halo/icons/sentry.dmi'
 	icon_state = "artifact"
+
+//auto perma turrets
+/obj/structure/autoturret/perma
+	name = "\improper Autoturret"
+	desc = "A mounted weapon powered by a simple AI and a sensor package."
+
+	vision_range = 9
+	burst_size = 5
+	burst_delay = 0.2 SECONDS
+	fire_sound = 'code/modules/halo/sounds/Innie30calfirefix.ogg'
+
+	anchored = 1

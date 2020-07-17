@@ -1,8 +1,9 @@
 /obj/item/weapon/gun/energy/railrifle
 	name = " Asymmetric Recoilless Carbine-920"
 	desc = "An Hesphaistos Industries G40E carbine, designed to kill with concentrated energy blasts."
-	icon_state = "phantom"
-	item_state = "phantom"
+	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
+	icon_state = "railgun"
+	item_state = "railgun"
 	fire_sound = 'sound/weapons/pulse.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_LARGE

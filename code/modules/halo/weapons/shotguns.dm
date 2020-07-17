@@ -73,8 +73,9 @@
 //M45 TS shotgun
 
 /obj/item/weapon/gun/projectile/shotgun/pump/m45_ts
-	name = "M45 TS tactical shotgun"
-	desc = "The UNSC's older model of the primary shotgun and one of the most effective close range infantry weapons used by front line forces. Has an inbuilt side mounted flashlight."
+	name = "M45D tactical shotgun"
+	desc = "The UNSC's primary shotgun and one of the most effective close range infantry weapons used by front line forces. Has an inbuilt side mounted flashlight. \
+	Additionally, it also has an integrated smart choke."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "M45 TS"
 	item_state = "m45"

@@ -1,22 +1,27 @@
 #define SINGLE_CASING 	1
 #define SPEEDLOADER 	2
 #define MAGAZINE 		4
-
+#define RIFLE_EMBED_PROB 75
 
 
 //used by: Magnum M6D, Magnum M6S
 
 /obj/item/ammo_magazine/m127_saphe
 	name = "magazine (12.7mm) M225 SAP-HE"
-	desc = "12.7x40mm M225 Semi-Armor-Piercing High-Explosive magazine containing 12 shots. Very deadly."
+	desc = "12.7x40mm M225 Semi-Armor-Piercing High-Explosive magazine containing 8 shots. Very deadly."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "magnummag"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a127_saphe
 	matter = list(DEFAULT_WALL_MATERIAL = 1000) //12.7mm casing = 83.3 metal each
 	caliber = "12.7mm"
-	max_ammo = 12
+	max_ammo = 8
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/m127_saphe/m6h2
+	name = "magazine (12.7mm) M225 SAP-HE Extended"
+	desc = "12.7x40mm M225 Semi-Armor-Piercing High-Explosive magazine containing 12 shots. Very deadly."
+	max_ammo = 12
 
 /obj/item/ammo_casing/a127_saphe
 	desc = "A 12.7mm bullet casing."
@@ -43,14 +48,14 @@
 
 /obj/item/ammo_magazine/r127
 	name = "magazine (12.7mm)"
-	desc = "12.7x40mm magazine containing 12 rounds. Civilian variant."
+	desc = "12.7x40mm magazine containing 8 rounds. Civilian variant."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "m6bmag"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a127
 	matter = list(DEFAULT_WALL_MATERIAL = 1000) //12.7mm casing = 83.3 metal each
 	caliber = "12.7mm"
-	max_ammo = 12
+	max_ammo = 8
 	multiple_sprites = 1
 
 
@@ -58,15 +63,20 @@
 
 /obj/item/ammo_magazine/m127_saphp
 	name = "magazine (12.7mm) M228 SAP-HP"
-	desc = "12.7x40mm M228 Semi-Armor-Piercing High-Penetration magazine containing 12 rounds."
+	desc = "12.7x40mm M228 Semi-Armor-Piercing High-Penetration magazine containing 8 rounds."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "SOCOMmag"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a127_saphp
 	matter = list(DEFAULT_WALL_MATERIAL = 1000) //12.7mm casing = 83.3 metal each
 	caliber = "12.7mm"
-	max_ammo = 12
+	max_ammo = 8
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/m127_saphp/m6h2
+	name = "magazine (12.7mm) M228 SAP-HP Extended"
+	desc = "12.7x40mm M228 Semi-Armor-Piercing High-Penetration magazine containing 12 rounds."
+	max_ammo = 12
 
 /obj/item/ammo_casing/a127_saphp
 	desc = "A 12.7mm bullet casing."
@@ -82,7 +92,7 @@
 	name = "box of 12.7mm M228 magazines"
 	startswith = list(/obj/item/ammo_magazine/m127_saphp = 7)
 
-//used by: MA5B assault rifle, M739 Light Machine Gun, M392 designated marksman rifle
+//used by: MA5B/D assault rifle, M739 Light Machine Gun, M392 designated marksman rifle
 
 /obj/item/ammo_magazine/m762_ap
 	name = "magazine (7.62mm) M118 FMJ-AP"
@@ -106,6 +116,26 @@
 	name = "MA5B magazine (7.62mm) Tactical Training Rounds"
 	desc = "7.62x51mm Tactical Training Rounds, powerful chemicals inside of a plastic polymer shell that disperse upon impact and render the target immobile."
 	ammo_type = /obj/item/ammo_casing/a762_ttr
+
+/obj/item/ammo_magazine/m762_ap/MA5D
+	name = "MA5D magazine (7.62mm) M118 FMJ-AP"
+	desc = "7.62x51mm M118 Full Metal Jacket Armor Piercing magazine containing 32 rounds. Specific to the MA5D."
+	icon_state = "MA5D_AP_mag"
+	max_ammo = 32
+
+/obj/item/ammo_magazine/m762_ap/MA5D/HP
+	name = "MA5D magazine (7.62mm) HP"
+	desc = "7.62x51mm Hollow-point rounds in a magazine compatible with the MA5D. These rounds are unlikely to pen most armor, but if they do, it's much more damaging than the standard FMJ-AP munition. Generally best to save these for the grunts."
+	icon_state = "MA5D_HP_mag"
+	ammo_type = /obj/item/ammo_casing/a762_hp
+	max_ammo = 32
+
+/obj/item/ammo_magazine/m762_ap/MA5D/SH
+	name = "MA5D magazine (7.62mm) SH"
+	desc = "7.62x51mm Shredder rounds in a magazine compatible with the MA5D. These rounds are designed to split up on impact, and as such have little penetration."
+	icon_state = "MA5D_SH_mag"
+	ammo_type = /obj/item/ammo_casing/a762_sh
+	max_ammo = 32
 
 /obj/item/ammo_magazine/m762_ap/M392
 	name = "M392 magazine (7.62mm) M118 FMJ-AP"
@@ -137,14 +167,41 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 
 /obj/item/ammo_casing/a762_ttr
-	desc = "A 7.62mm bullet casing."
+	desc = "A 7.62mm TTR bullet casing."
 	caliber = "a762"
 	projectile_type = /obj/item/projectile/bullet/a762_ttr
 
 /obj/item/ammo_casing/a762_ap
-	desc = "A 7.62mm bullet casing."
+	desc = "A 7.62mm AP bullet casing."
 	caliber = "a762"
 	projectile_type = /obj/item/projectile/bullet/a762_ap
+
+/obj/item/ammo_casing/a762_hp
+	desc = "A 7.62mm hollow-point bullet casing."
+	caliber = "a762"
+	projectile_type = /obj/item/projectile/bullet/a762_hp
+
+/obj/item/ammo_casing/a762_sh
+	desc = "A 7.62mm shredder bullet casing."
+	caliber = "a762"
+	projectile_type = /obj/item/projectile/bullet/a762_sh
+
+/obj/item/projectile/bullet/a762_sh
+	name = "shredder bullet"
+	damage = 5
+	shield_damage = 0
+	embed = 1
+	sharp = 1
+	armor_penetration = 5
+
+/obj/item/projectile/bullet/a762_sh/on_hit(var/mob/living/carbon/human/L, var/blocked, var/def_zone )
+	if(blocked >= 100 || !istype(L))
+		return
+	var/obj/shard = new /obj/item/weapon/material/shard/shrapnel
+	var/obj/item/organ/external/embed_organ = pick(L.organs)
+	shard.name = "bullet shrapnel"
+	embed_organ.embed(shard)
+	. = ..()
 
 /obj/item/ammo_casing/a762_m392
 	desc = "A 7.62mm bullet casing."
@@ -161,6 +218,10 @@
 	damage_type = PAIN
 	penetrating = 0
 
+/obj/item/projectile/bullet/a762_hp
+	damage = 45
+	armor_penetration = 0
+
 /obj/item/projectile/bullet/a762_M392
 	damage = 30
 	armor_penetration = 15
@@ -176,8 +237,8 @@
 //used by: BR55 battle rifle
 
 /obj/item/ammo_magazine/m95_sap
-	name = "magazine (9.5mm) M634 X-HP-SAP"
-	desc = "9.5x40mm M634 Experimental High-Powered Semi-Armor-Piercing magazine containing 36 rounds. Specific to the BR85."
+	name = "magazine (9.5mm) M634 HP-SAP"
+	desc = "M634 9.5×40mm High-Powered Semi-Armor-Piercing magazine containing 36 rounds. Specific to the BR85."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "Br85_mag"
 	mag_type = MAGAZINE
@@ -188,7 +249,7 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/m95_sap/br55
-	desc = "9.5x40mm M634 Experimental High-Powered Semi-Armor-Piercing magazine containing 36 rounds. Specific to the BR55."
+	desc = "M634 9.5×40mm High-Powered Semi-Armor-Piercing magazine containing 36 rounds. Specific to the BR55."
 	icon_state = "BR55_Mag"
 
 /obj/item/ammo_casing/a95_sap

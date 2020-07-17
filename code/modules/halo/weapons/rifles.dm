@@ -5,7 +5,7 @@
 
 /obj/item/weapon/gun/projectile/ma5b_ar
 	name = "\improper MA5B Assault Rifle"
-	desc = "Standard-issue service rifle of the UNSC Marines. Has an inbuilt underbarrel flashlight. Takes 7.62mm calibre magazines."
+	desc = "The old standard-issue service rifle of the UNSC Marines. Has an inbuilt underbarrel flashlight. Takes 7.62mm calibre magazines, though you'll be hard pressed to find someone stupid enough to hand out specialized munitions for the MA5B."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "MA5-Base-Empty"
 	item_state = "ma5b"
@@ -17,7 +17,7 @@
 	magazine_type = /obj/item/ammo_magazine/m762_ap/MA5B
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_ap/MA5B) //Disallows loading LMG boxmags into the MA5B
 
-	burst = 5
+	burst = 6
 	burst_delay = 1.8
 	one_hand_penalty = -1
 	dispersion = list(0.0,0.2,0.3,0.5,0.73) //@ 7 tiles, deviation is 0 - 1 tiles.
@@ -196,3 +196,17 @@
 	else
 		icon_state = "BR55-Unloaded-Base"
 	. = ..()
+
+/obj/item/weapon/gun/projectile/ma5b_ar/ma5d_ar
+	name = "\improper MA5D ICWS"
+	desc = "Standard-issue service rifle of the UNSC Marines. Much more refined than the aged MA5B and C series. Features a smaller mag, but much better dispersion at range."
+//	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi' //Doesn't have custom sprites as of yet. Sorry.
+//	icon_state = "MA5-Base-Empty"
+//	item_state = "MA5D"
+	magazine_type = /obj/item/ammo_magazine/m762_ap/MA5D
+	allowed_magazines = list(/obj/item/ammo_magazine/m762_ap/MA5D)
+
+	burst = 4
+	burst_delay = 1.2
+	one_hand_penalty = -1
+	dispersion = list(0.0,0.1,0.2,0.3,0.4) //Deviation 0 at one tile, same as original rifle. Far better deviation further out.

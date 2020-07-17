@@ -76,7 +76,7 @@
 
 //unsc spartan headset
 /obj/item/device/radio/headset/unsc/spartan
-	name = "Spartan II radio headset"
+	name = "Spartan radio headset"
 	icon_state = "mine_headset"
 	dongles = list(/obj/item/device/channel_dongle/human_civ,\
 		/obj/item/device/channel_dongle/squadcom,\

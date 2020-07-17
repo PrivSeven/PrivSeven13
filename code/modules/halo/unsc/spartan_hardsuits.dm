@@ -57,6 +57,18 @@
 	chest_type = /obj/item/clothing/suit/armor/special/spartan/mkv_gungnir
 	helm_type = /obj/item/clothing/head/helmet/spartan/mkv_gungnir
 
+/obj/item/weapon/rig/spartan/mjolnir_recruit//temp evil given this isn't how Mjolnir works. >:(
+	name = "RECRUIT-class Mjolnir"
+	desc = "The second generation of powered assault suits. Not much more to be said, aside from the increased functionality, among other things."
+	icon_state = "mjolnir"
+
+	chest_type = /obj/item/clothing/suit/armor/special/spartan/gen2/recruit
+	helm_type = /obj/item/clothing/head/helmet/spartan/gen2/recruit
+	boot_type = /obj/item/clothing/shoes/magboots/spartan/gen2
+	glove_type = /obj/item/clothing/gloves/spartan/gen2
+	emp_protection = 100
+
+
 //Disabled due to missing gear in the code)
 /*
 /obj/item/weapon/rig/spartan/mjolnir_mk5_commando

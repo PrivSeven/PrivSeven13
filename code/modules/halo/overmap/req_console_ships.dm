@@ -45,9 +45,9 @@
 	icons_pickfrom_list = list('code/modules/halo/icons/overmap/req_macplatform.dmi')
 
 /datum/spawner_choice/experimental_unsc_combat
-	choice_name = "UNSC Experimental Combat MAC Ship"
+	choice_name = "UNSC LAHG Combat MAC Ship"
 	choice_category = "Gunboats"
-	choice_desc = "A ship with stripped down armor, armed with a large MAC gun"
+	choice_desc = "A ship with stripped down armor, armed with a large MAC gun. 'Lightly Armored, Heavy Gun'."
 	spawned_ship = /obj/effect/overmap/ship/npc_ship/shuttlecraft/experimental_unsc_combat
 	cooldown_apply = 9 MINUTES
 

@@ -7,7 +7,7 @@
 #define FLOOD_EVENT_REPEAT_TIME 15 MINUTES
 
 /datum/game_mode/achlys
-	name = "ONI Investigation: Achlys"
+	name = "ONI Investigation: Achlys - Budget Cut Edition"
 	round_description = ""
 	extended_round_description = ""
 	config_tag = "achlys"

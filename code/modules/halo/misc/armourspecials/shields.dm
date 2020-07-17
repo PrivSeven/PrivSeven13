@@ -193,6 +193,10 @@
 	shieldoverlay = new /obj/effect/overlay/shields/spartan
 	shield_recharge_delay = 5 SECONDS //much faster.
 
+/datum/armourspecials/shields/spartan/gen2
+	shieldoverlay = new /obj/effect/overlay/shields/spartan
+	shield_recharge_delay = 2 SECONDS //you're not going to have much luck, compadre.
+
 /datum/armourspecials/shields/unggoy
 	shield_recharge_delay = 5 SECONDS //Equal to spartans because unggoy shields should be low capacity.
 	shieldoverlay = new /obj/effect/overlay/shields/unggoy

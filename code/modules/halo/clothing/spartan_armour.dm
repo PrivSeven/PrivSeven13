@@ -69,14 +69,59 @@
 	return I
 
 
-//IV Gear - Temp sprites until we get proper ones. Sorry, lad.
+
+
+//IV Gear - Temp sprites until we get proper ones. Sorry, lad. Or lass. Whoever we're taking the donator sprites from, anyhow.
+/obj/item/clothing/suit/armor/special/spartan/gen2
+	name = "MJOLNIR Powered Assault Armor Mark (Gen2)"
+	desc = "a technologically-advanced combat exoskeleton system designed to vastly improve the strength, speed, agility, reflexes and durability of a SPARTAN-IV."
+	icon = 'code/modules/halo/clothing/spartan_armour.dmi'
+	icon_state = "mk4-shell"//temp
+	item_state = "mk4-shell-worn"//temp
+	icon_override = 'code/modules/halo/clothing/spartan_armour.dmi'
+
+	blood_overlay_type = "armor"
+	armor = list(melee = 80, bullet = 80, laser = 40, energy = 40, bomb = 80, bio = 40, rad = 40) //Generally better all around.
+	armor_thickness = 48
+	species_restricted = list("Spartan Four")
+	max_suitstore_w_class = ITEM_SIZE_HUGE
+	unacidable = 1
+
+	specials = list(/datum/armourspecials/shields/spartan/gen2,\
+		/datum/armourspecials/shieldmonitor,\
+		/datum/armourspecials/self_destruct)
+	totalshields = 240
+	item_state_slots = list(slot_l_hand_str = "syndicate-black", slot_r_hand_str = "syndicate-black")
+
+
 /obj/item/clothing/head/helmet/spartan/gen2
-	name = "MJOLNIR Powered Assault Armor Helmet (Gen2)"
+	name = "MJOLNIR Powered Assault (Gen2)"
+	desc = "Ave, Imperator, morituri te salutant."
+	icon = 'code/modules/halo/clothing/spartan_armour.dmi'
+	icon_state = "mk4-helm"
+	item_state = "mk4-helm-worn"
+	icon_override = 'code/modules/halo/clothing/spartan_armour.dmi'
+
+	armor = list(melee = 80, bullet = 80, laser = 40, energy = 40, bomb = 80, bio = 40, rad = 40) //Generally better all around.
+	species_restricted = list("Spartan Four")
+	armor_thickness = 48
+
+	action_button_name = "Toggle Helmet Light"
+	light_overlay = "helmet_light_dual"
+	brightness_on = 4
+	unacidable = 1
+	on = 0
+	item_state_slots = list(slot_l_hand_str = "syndicate-helm-black", slot_r_hand_str = "syndicate-helm-black")
+
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/spartan_hud
+
+/obj/item/clothing/head/helmet/spartan/gen2/recruit
+	name = "RECRUIT-class Mjolnir Helmet"
 	icon_state = "ghostdex-helm-obj"
 	item_state = "ghostdex-helm-worn"
 
-/obj/item/clothing/suit/armor/special/spartan/gen2
-	name = "MJOLNIR Powered Assault Armor (Gen2)"
+/obj/item/clothing/suit/armor/special/spartan/gen2/recruit
+	name = "RECRUIT-class Mjolnir Armor"
 	icon_state = "ghostdex-obj"
 	item_state = "ghostdex-worn"
 

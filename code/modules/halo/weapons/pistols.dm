@@ -10,6 +10,7 @@
 	icon_state = "magnum"
 	item_state = "halo_pistol"
 	magazine_type = /obj/item/ammo_magazine/m127_saphe
+	allowed_magazines = list(/obj/item/ammo_magazine/m127_saphe)//Only the M6H2 can load tewlve round mags.
 	caliber = "12.7mm"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	one_hand_penalty = 1
@@ -153,3 +154,20 @@
 
 /obj/item/weapon/gun/projectile/heavysniper/handgonne/scope()
 	 return
+
+
+//proper handguns
+/obj/item/weapon/gun/projectile/m6d_magnum/m6h
+	name = "\improper M6H Magnum"
+	icon_state = "m6g"//temp sprites to present a difference
+	item_state = "m6g"
+	desc = "Standard issue sidearm, capable of loading the older eight round magazines. Chambered in the powerful 12.7mm caliber."
+
+/obj/item/weapon/gun/projectile/m6d_magnum/m6h2
+	name = "\improper M6H2 Magnum"
+	desc = "Standard issue sidearm, capable of loading the newer twelve round magazines, and boasts improved dispersion at range. Chambered in the powerful 12.7mm caliber."
+	dispersion = list(0.1) //Much better dispersion.
+	fire_delay = 2 //Lower rate of fire.
+
+	magazine_type = /obj/item/ammo_magazine/m127_saphe/m6h2
+	allowed_magazines = list(/obj/item/ammo_magazine/m127_saphe/m6h2)//It's a twelve round mag, and these are limited. Identical sprite though until we get replacements.

@@ -99,3 +99,73 @@
     eye_attack_text = "fingers"
     eye_attack_text_victim = "digits"
     damage = 20
+
+//S4s
+/datum/species/spartan_four
+	name = "Spartan Four"
+	name_plural = "Spartans"
+	blurb = "The SPARTAN-IV Program was designed to continue the efforts of the Orion project, though producing actual results. Some argue these soldiers \
+	bypass even the legacy of their older cousins, in some regards. "
+	icobase = 'code/modules/halo/unsc/r_Augmented_Human.dmi' //Sadly, we need to use the beef sprite until we get proper ones.
+	deform = 'code/modules/halo/unsc/r_Augmented_Human.dmi'
+	icon_template = 'code/modules/halo/unsc/r_Augmented_Human_template.dmi'
+	item_icon_offsets = list(list(1,0),list(1,0),null,list(1,0),null,null,null,list(1,0),null)
+	inhand_icon_offsets = list(list(-2,0),list(2,0),null,list(0,0),null,null,null,list(0,0),null)
+	flags = NO_MINOR_CUT
+	total_health = 180 //Armor compensates for a lot of damage, so lower than standard S2s for balance.
+	spawn_flags = SPECIES_CAN_JOIN
+	brute_mod = 0.8 //Lower amount of brute damage taken than sangheili
+	burn_mod = 0.8 //ditto for burn
+	pain_mod = 0.6 //Lower pain damage taken than sangheili
+	slowdown = -0.5
+	can_force_door = 1
+	additional_langs = list("Sign Language")
+	inherent_verbs = list(/mob/living/carbon/human/proc/dual_wield_weapons)
+	unarmed_types = list(/datum/unarmed_attack/spartan_punch)
+
+	metabolism_mod = 1.25
+	breath_pressure = 14.5
+	darksight = 6
+	explosion_effect_mod = 0.5
+
+	siemens_coefficient = 0.8
+	heat_discomfort_level = 330 //57C
+	cold_discomfort_level = T0C
+	//Buff to temperature damage levels (5% per level)
+	heat_level_1 = 380 //~107C
+	heat_level_2 = 420 //147C
+	heat_level_3 = 1050 //777C
+	cold_level_1 = 247 //-26C
+	cold_level_2 = 190 //-83C
+	cold_level_3 = 114 //-159C
+
+	min_age = 24//Generally experienced individuals, not just soldiers.
+	max_age = 58//Could be much higher, in theory, given what the S4 augmentation allows. For now, however, we'll lock it as such.
+
+	has_organ = list(
+		BP_HEART =    /obj/item/organ/internal/heart/spartan,
+		BP_LUNGS =    /obj/item/organ/internal/lungs/spartan_four,
+		BP_LIVER =    /obj/item/organ/internal/liver/spartan,
+		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
+		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_EYES =     /obj/item/organ/internal/eyes/occipital_reversal
+		)
+
+	has_limbs =  list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest/augmented),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin/augmented),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/augmented),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/augmented),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/augmented),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/augmented),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/augmented),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand/augmented),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/augmented),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/augmented),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/augmented)
+		)
+
+	equipment_slowdown_multiplier = 0.6
+
+	roll_distance = 4
+	per_roll_delay = 1.5

@@ -3,8 +3,6 @@
 	title = "Marine"
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine
 	alt_titles = list(\
-		"Assault Recon Marine",\
-		"Designated Marksman Marine",\
 		"Marine Combat Medic",\
 		"Marine Combat Technician")
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine)
@@ -20,6 +18,8 @@
 	title = "Marine Corporal"
 	total_positions = 2
 	spawn_positions = 2
+	alt_titles = list(\
+		"Infantry Assaultman")
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e4
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
 
@@ -41,4 +41,6 @@
 	spawn_positions = 1
 	economic_modifier = 1.5
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/cwo2
+	alt_titles = list(\
+		"Warrant Officer")
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)

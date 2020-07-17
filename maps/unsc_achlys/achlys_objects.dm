@@ -13,7 +13,7 @@
 
 /obj/item/clothing/head/helmet/achlys_marine //regular marine helmet lacking a flashlight and visor
 	name = "Olive Camo CH251 Helmet"
-	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force."
+	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force. This one appears to have the inbuilt visor and flashlight gutted. Damn."
 	icon = ITEM_INHAND
 	icon_override = MARINE_OVERRIDE
 	item_state = "CH252 Helmet"
@@ -28,6 +28,56 @@
 	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.7
 	w_class = 3
+
+//eva
+/obj/item/clothing/head/helmet/eva/achlys
+	name = "\improper Old EVA Helmet"
+	desc = "A universally used helmet to protect one's head against the vacuum when doing EVA This one appears stripped of its inbuilt hud, and the flashlight is of a cheaper make. Damn."
+	icon = 'code/modules/halo/clothing/marine.dmi'
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = FACE|HEAD
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "eva"
+	icon_state = "eva"
+	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
+	armor = list(melee = 25, bullet = 25, laser = 25,energy = 25, bomb = 25, bio = 25, rad = 5)
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+
+	action_button_name = "Toggle Helmet Light"
+	light_overlay = "helmet_light"
+	brightness_on = 0.5
+
+/obj/item/clothing/suit/spaceeva/achlys
+	name = "\improper Old EVA Marine Suit"
+	desc = "A universal suit used in EVA runs on derelicts. This one appears to be missing some of its armor plating, and the anti-static weave is punctured. Still looks safe for space use. Probably."
+	icon = 'code/modules/halo/clothing/marine.dmi'
+	body_parts_covered = LOWER_TORSO|UPPER_TORSO|ARMS|HANDS
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "body"
+	icon_state = "body"
+	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
+	siemens_coefficient = 0.9
+	armor_thickness = 5
+	w_class = ITEM_SIZE_HUGE
+	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/weapon/tank)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 25, rad = 5)
+
+/obj/item/clothing/shoes/magboots/eva/achlys
+	name = "\improper Burnt EVA Armoured Boots"
+	desc = "These boots, while pressure sealed and designed for space walks, appear to have been damaged in transit. Darn."
+	icon = 'code/modules/halo/clothing/marine.dmi'
+	body_parts_covered = LEGS|FEET
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "evalegs"
+	icon_state = "evalegs"
+	icon_base = null
+	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
+	can_hold_knife = 1
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 25, rad = 5)
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/weapon/storage/belt/utility/marine_engineer
 	can_hold = list(/obj/item/weapon/weldingtool,/obj/item/weapon/crowbar,/obj/item/ammo_magazine,/obj/item/ammo_box,/obj/item/weapon/grenade/frag/m9_hedp,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/chem_grenade/incendiary,/obj/item/weapon/armor_patch)
@@ -63,32 +113,6 @@
 	/obj/item/device/flashlight/unsc = 1,
 	/obj/item/weapon/storage/belt/marine_medic = 1)
 
-/obj/structure/closet/crate/marine/cqc
-	name = "CQB equipment"
-	desc = "Perfect for being up close and personal."
-	icon_state = "secgearcrate"
-	icon_opened = "secgearcrateopen"
-	icon_closed = "secgearcrate"
-
-/obj/structure/closet/crate/marine/cqc/WillContain()
-	return list(
-	/obj/item/weapon/storage/box/MRE/Pizza = 1,
-	/obj/item/weapon/storage/box/flares = 1,
-	/obj/item/weapon/material/knife/combat_knife = 1,
-	/obj/item/ammo_magazine/m5 = 2,
-	/obj/item/weapon/gun/projectile/m7_smg = 1,
-	/obj/item/weapon/grenade/frag/m9_hedp = 1,
-	/obj/item/ammo_box/shotgun/slug = 1,
-	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts = 1,
-	/obj/item/clothing/head/helmet/achlys_marine = 1,
-	/obj/item/clothing/mask/marine = 1,
-	/obj/item/clothing/glasses/hud/tactical = 1,
-	/obj/item/clothing/suit/storage/marine = 1,
-	/obj/item/clothing/gloves/thick/unsc = 1,
-	/obj/item/clothing/shoes/marine = 1,
-	/obj/item/weapon/storage/belt/marine_ammo = 1)
-
 /obj/structure/closet/crate/marine/engineer
 	name = "combat engineer equipment"
 	desc = "Engineer gear."
@@ -101,17 +125,14 @@
 	/obj/item/clothing/head/helmet/achlys_marine = 1,
 	/obj/item/clothing/mask/marine = 1,
 	/obj/item/clothing/glasses/welding = 1,
+	/obj/item/clothing/glasses/hud/tactical = 1,
 	/obj/item/clothing/suit/storage/marine = 1,
 	/obj/item/clothing/gloves/thick/unsc = 1,
 	/obj/item/clothing/shoes/marine = 1,
 	/obj/item/weapon/storage/belt/utility/marine_engineer = 1,
+	/obj/item/weapon/plastique = 2,
 	/obj/item/weapon/storage/box/MRE/Chicken = 1,
-	/obj/item/weapon/material/knife/combat_knife = 1,
 	/obj/item/weapon/armor_patch = 2,
-	/obj/item/ammo_magazine/m127_saphe = 2,
-	/obj/item/weapon/gun/projectile/m6d_magnum = 1,
-	/obj/item/ammo_magazine/m762_ap/MA5B = 2,
-	/obj/item/weapon/gun/projectile/ma5b_ar = 1,
 	/obj/item/weapon/storage/box/flares = 1)
 
 /obj/structure/closet/crate/marine/rifleman
@@ -125,18 +146,13 @@
 	return list(
 	/obj/item/weapon/storage/box/MRE/Spaghetti = 1,
 	/obj/item/weapon/storage/box/flares = 2,
-	/obj/item/weapon/material/knife/combat_knife = 1,
-	/obj/item/ammo_magazine/m127_saphe = 2,
-	/obj/item/weapon/gun/projectile/m6d_magnum = 1,
-	/obj/item/ammo_magazine/m762_ap/MA5B = 3,
-	/obj/item/weapon/gun/projectile/ma5b_ar = 1,
-	/obj/item/weapon/grenade/frag/m9_hedp = 1,
 	/obj/item/clothing/head/helmet/achlys_marine = 1,
 	/obj/item/clothing/mask/marine = 1,
 	/obj/item/clothing/glasses/hud/tactical = 1,
 	/obj/item/clothing/suit/storage/marine = 1,
 	/obj/item/clothing/gloves/thick/unsc = 1,
 	/obj/item/clothing/shoes/marine = 1,
+	/obj/item/weapon/grenade/frag/m9_hedp = 2,
 	/obj/item/weapon/storage/belt/marine_ammo = 1)
 
 /obj/structure/closet/crate/secure/marine_squad_leader
@@ -151,11 +167,6 @@
 	return list(
 	/obj/item/weapon/storage/box/MRE/Spaghetti = 1,
 	/obj/item/weapon/storage/box/flares = 1,
-	/obj/item/weapon/material/knife/combat_knife = 1,
-	/obj/item/ammo_magazine/m127_saphe = 2,
-	/obj/item/weapon/gun/projectile/m6d_magnum = 1,
-	/obj/item/ammo_magazine/m762_ap/MA5B = 2,
-	/obj/item/weapon/gun/projectile/ma5b_ar = 1,
 	/obj/item/device/taperecorder = 1,
 	/obj/item/squad_manager = 1,
 	/obj/item/clothing/head/helmet/achlys_marine = 1,
@@ -172,7 +183,6 @@
 	icon_state ="ironhammer"
 	icon_deny = "ironhammer-deny"
 	premium = list(/obj/structure/closet/crate/marine/rifleman = 10,
-					/obj/structure/closet/crate/marine/cqc = 3,
 					/obj/structure/closet/crate/marine/engineer = 1,
 					/obj/structure/closet/crate/marine/marine_medic = 2,
 					/obj/structure/closet/crate/secure/marine_squad_leader = 1) //there should only be 2 of these on the map so do multiplication

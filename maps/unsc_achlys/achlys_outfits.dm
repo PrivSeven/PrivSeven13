@@ -6,7 +6,22 @@
 	l_ear = /obj/item/device/radio/headset/unsc/commander
 	uniform = /obj/item/clothing/under/unsc/command
 	shoes = /obj/item/clothing/shoes/brown
+	belt = /obj/item/weapon/gun/projectile/m6d_magnum
 	pda_slot = null
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/officer/o6, /obj/item/clothing/accessory/badge/tags)
+
+	flags = 0
+
+	hierarchy_type = /decl/hierarchy/outfit/job
+
+/decl/hierarchy/outfit/job/unsc_achlys/SOF
+	name = "Subordinate Officer"
+
+	l_ear = /obj/item/device/radio/headset/unsc/officer
+	uniform = /obj/item/clothing/under/unsc/command
+	shoes = /obj/item/clothing/shoes/brown
+	pda_slot = null
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/officer, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0
 
@@ -20,6 +35,7 @@
 	shoes = /obj/item/clothing/shoes/brown
 	l_pocket = /obj/item/weapon/coin/gear_req
 	pda_slot = null
+	starting_accessories = list(/obj/item/clothing/accessory/rank/marine/enlisted/e5, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0
 
@@ -33,6 +49,7 @@
 	shoes = /obj/item/clothing/shoes/brown
 	l_pocket = /obj/item/weapon/coin/gear_req
 	pda_slot = null
+	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0
 
@@ -47,6 +64,7 @@
 	l_pocket = /obj/item/weapon/coin/gear_req
 	r_pocket = /obj/item/weapon/paper/crumpled/orders
 	pda_slot = null
+	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0
 
@@ -64,6 +82,7 @@
 	uniform = /obj/item/clothing/under/unsc/pilot
 	shoes = /obj/item/clothing/shoes/brown
 	pda_slot = null
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/officer/o2, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0
 
