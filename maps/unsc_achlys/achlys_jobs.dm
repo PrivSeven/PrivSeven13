@@ -154,7 +154,7 @@ GLOBAL_LIST_EMPTY(dante_pilot_spawns)
 /obj/effect/landmark/start/dante_ai
 	name = "UNSC AI"
 
-/obj/effect/landmark/start/dante_ai
+/obj/effect/landmark/start/dante_spartan
 	name = "Spartan IV"
 
 GLOBAL_LIST_EMPTY(dante_officer_spawns)

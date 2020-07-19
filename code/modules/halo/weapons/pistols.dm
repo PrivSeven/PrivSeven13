@@ -65,6 +65,7 @@
 	fire_sound = 'code/modules/halo/sounds/MagnumShotSoundEffect.ogg'
 	reload_sound = 'code/modules/halo/sounds/MagnumReloadSoundEffect.ogg'
 	magazine_type = /obj/item/ammo_magazine/r127
+	allowed_magazines = list(/obj/item/ammo_magazine/r127)// Civ firearm. Temp.
 
 	one_hand_penalty = 0
 

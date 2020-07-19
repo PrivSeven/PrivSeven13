@@ -11,7 +11,7 @@
 "ak" = (/turf/simulated/floor/plating,/area/achlys/nine/z1commandhallway)
 "al" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/achlys/nine/z1commandhallway)
 "am" = (/turf/simulated/wall/strong,/area/achlys/three/z1sechallway)
-"an" = (/obj/random/achlock,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/achlys/three/z1sechallway)
+"an" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/door/airlock/highsecurity{locked = 1; name = "Primary Umbilical"},/turf/simulated/floor/plating,/area/achlys/three/z1sechallway)
 "ao" = (/turf/simulated/floor/plating,/area/achlys/eight/z1main)
 "ap" = (/obj/effect/decal/cleanable/generic,/turf/simulated/floor/plating,/area/achlys/eight/z1main)
 "aq" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/achlys/eight/z1main)
