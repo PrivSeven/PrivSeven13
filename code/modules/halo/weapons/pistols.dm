@@ -10,7 +10,7 @@
 	icon_state = "magnum"
 	item_state = "halo_pistol"
 	magazine_type = /obj/item/ammo_magazine/m127_saphe
-	allowed_magazines = list(/obj/item/ammo_magazine/m127_saphe)//Only the M6H2 can load tewlve round mags.
+	allowed_magazines = list(/obj/item/ammo_magazine/m127_saphe,/obj/item/ammo_magazine/m127_saphp)//Only the M6H2 can load tewlve round mags.
 	caliber = "12.7mm"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	one_hand_penalty = 1
@@ -171,4 +171,4 @@
 	fire_delay = 2 //Lower rate of fire.
 
 	magazine_type = /obj/item/ammo_magazine/m127_saphe/m6h2
-	allowed_magazines = list(/obj/item/ammo_magazine/m127_saphe/m6h2)//It's a twelve round mag, and these are limited. Identical sprite though until we get replacements.
+	allowed_magazines = list(/obj/item/ammo_magazine/m127_saphe/m6h2,/obj/item/ammo_magazine/m127_saphp/m6h2)//It's a twelve round mag, and these are limited. Identical sprite though until we get replacements.
