@@ -107,8 +107,6 @@
 		/obj/item/stack/medical/advanced/bruise_pack/covenant,
 		/obj/item/stack/medical/advanced/ointment/covenant,
 		/obj/item/weapon/storage/pill_bottle/covenant/inaprovaline,
-		/obj/item/weapon/reagent_containers/syringe/biofoam,
-		/obj/item/weapon/reagent_containers/syringe/biofoam,
 		/obj/item/weapon/storage/pill_bottle/covenant/iron,
 		/obj/item/weapon/storage/pill_bottle/covenant/tramadol,
 		/obj/item/device/healthanalyzer/covenant,
