@@ -45,9 +45,3 @@
 		)
 
 	default_spawn = DEFAULT_SPAWNPOINT_ID
-
-//test, probably don't need it
-
-	species_to_job_whitelist = list(\
-		/datum/species/sangheili = list(/datum/job/covenant/sangheili_minor,/datum/job/covenant/sangheili_major,/datum/job/covenant/sangheili_honour_guard,/datum/job/covenant/sangheili_shipmaster,/datum/job/covenant/sangheili_ultra),\
-		)
