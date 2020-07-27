@@ -7,7 +7,7 @@
 	amount_per_transfer_from_this = 15
 	volume = 15
 
-	starts_with = list(/datum/reagent/biofoam = 5, /datum/reagent/inaprovaline = 5, /datum/reagent/ketoprofen = 5)
+	starts_with = list(/datum/reagent/inaprovaline = 5, /datum/reagent/ketoprofen = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/necrosis
 	name = "tissue necrosis inhibitors"
