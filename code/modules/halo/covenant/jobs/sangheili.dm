@@ -44,8 +44,8 @@
 
 /datum/job/covenant/sangheili_minor
 	title = "Sangheili Minor"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 6
+	spawn_positions = 6
 	outfit_type = /decl/hierarchy/outfit/sangheili/minor
 	access = list(access_covenant, access_covenant_command)
 	faction_whitelist = "Covenant"
