@@ -5,7 +5,7 @@
 
 /obj/item/weapon/gun/projectile/ma5b_ar
 	name = "\improper MA5B Assault Rifle"
-	desc = "The old standard-issue service rifle of the UNSC Marines. Has an inbuilt underbarrel flashlight. Takes 7.62mm calibre magazines, though you'll be hard pressed to find someone stupid enough to hand out specialized munitions for the MA5B."
+	desc = "The good old standard-issue service rifle of the UNSC Marines. Has an inbuilt underbarrel flashlight. Takes 7.62mm calibre magazines, though you'll be hard pressed to find someone stupid enough to hand out specialized munitions for the MA5B."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "MA5-Base-Empty"
 	item_state = "ma5b"
@@ -199,7 +199,7 @@
 
 /obj/item/weapon/gun/projectile/ma5b_ar/ma5d_ar
 	name = "\improper MA5D ICWS"
-	desc = "Standard-issue service rifle of the UNSC Marines. Much more refined than the aged MA5B and C series. Features a smaller mag, but much better dispersion at range."
+	desc = "Limited-issue service rifle of the UNSC Marines. Much more refined than the aged MA5B and C series. Features a smaller mag, but much better dispersion at range."
 //	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi' //Doesn't have custom sprites as of yet. Sorry.
 //	icon_state = "MA5-Base-Empty"
 //	item_state = "MA5D"

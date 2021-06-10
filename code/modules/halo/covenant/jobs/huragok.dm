@@ -1,4 +1,3 @@
-
 /datum/job/covenant/huragok
 	title = "Covenant Huragok"
 	total_positions = 2
