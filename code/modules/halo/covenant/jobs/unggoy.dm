@@ -20,7 +20,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/unggoy/ultra
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
 
 /datum/job/covenant/unggoy_deacon
@@ -28,7 +28,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/unggoy/deacon
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
 
 
@@ -41,4 +41,4 @@
 	outfit_type = /decl/hierarchy/outfit/unggoy/specops
 	spawn_positions = 0
 	total_positions = 0
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"

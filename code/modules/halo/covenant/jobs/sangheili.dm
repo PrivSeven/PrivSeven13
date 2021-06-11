@@ -7,7 +7,7 @@
 	track_players = 1
 	outfit_type = /decl/hierarchy/outfit/sangheili/shipmaster
 //	is_whitelisted = 1
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
 
@@ -17,7 +17,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/sangheili/ultra
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
 
@@ -27,7 +27,7 @@
 	spawn_positions = 0
 	outfit_type = /decl/hierarchy/outfit/sangheili/honour_guard
 //	is_whitelisted = 1
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
 
@@ -38,7 +38,7 @@
 	open_slot_on_death = 1
 	department_flag = COM
 	outfit_type = /decl/hierarchy/outfit/sangheili/major
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
 
@@ -48,7 +48,7 @@
 	spawn_positions = 6
 	outfit_type = /decl/hierarchy/outfit/sangheili/minor
 	access = list(access_covenant, access_covenant_command)
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 
 
@@ -62,7 +62,7 @@
 	access = list(access_covenant)
 	total_positions = 1
 	spawn_positions = 1
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 
 /datum/job/covenant/sangheili_specops
@@ -73,14 +73,14 @@
 //	is_whitelisted = 1
 	spawn_positions = 0
 	total_positions = 0
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 
 /datum/job/covenant/sangheili_zealot
 	title = "Sangheili Zealot"
 	total_positions = 0
 	spawn_positions = 0
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	outfit_type = /decl/hierarchy/outfit/sangheili/zealot
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
