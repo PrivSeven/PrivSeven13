@@ -4,7 +4,7 @@
 	desc = "Boy I sure hope you worked up a big grunty thirst!"
 	icon = 'food_nipple.dmi'
 	icon_state = "food nipple"
-	density = 1
+	density = 0//It's attached to walls, normally.
 	anchored = 1
 
 /obj/structure/food_nipple/attack_hand(var/mob/living/carbon/user)

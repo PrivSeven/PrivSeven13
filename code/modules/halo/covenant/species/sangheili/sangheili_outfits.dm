@@ -101,7 +101,7 @@
 	shoes = /obj/item/clothing/shoes/sangheili/shipmaster
 	head = /obj/item/clothing/head/helmet/sangheili/shipmaster
 	l_pocket = /obj/item/weapon/grenade/plasma
-	r_pocket = /obj/item/weapon/grenade/plasma
+	r_pocket = /obj/item/weapon/paper/mission_statement
 	//
 	id_type = /obj/item/weapon/card/id/elite_zealot
 	id_slot = slot_wear_id
