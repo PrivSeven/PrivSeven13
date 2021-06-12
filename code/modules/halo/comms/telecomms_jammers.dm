@@ -43,6 +43,20 @@
 	jam_range = 225
 	jam_ignore_malfunction_chance = 30*/
 
+/obj/machinery/overmap_comms/jammer/covenant
+	name = "Covenant radio jammer"
+	desc = "A Covenant made jammer that attempts to intercept and disrupt all communications. Unfortunately, as it's meant for localised jamming exclusively, getting above the jammer by a decent amount will enable users to bypass the effect entirely."
+	icon_state = "jammer_covenant"
+	icon = 'code/modules/halo/comms/machines/telecomms_64.dmi'
+	anchored = 0
+/*	ignore_freqs = list(RADIO_COV)
+	jam_power = 30
+	jam_chance = 95
+	jam_range = 500//oof
+	jam_ignore_malfunction_chance = 30*/
+
+
+
 /* OBSOLETE */
 
 /obj/machinery/telecomms_jammers

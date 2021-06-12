@@ -286,7 +286,7 @@
 
 /obj/machinery/vending/armory/covenant/unggoy/heavy // Equipment for Unggoy
 	name = "Covenant - Unggoy Heavy Vendor"
-	desc = "Storage for Covenant Kig-Yar equipment"
+	desc = "Storage for Covenant Unggoy equipment"
 	icon_state ="covendor" // SPRITES
 	icon_deny = "covendor-deny"
 	products = list(

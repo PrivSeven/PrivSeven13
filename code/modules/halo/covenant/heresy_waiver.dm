@@ -22,3 +22,30 @@ Transmission-For the purpose of resource acquisition and organisation infiltrati
 --------------------------------------------------------------------------------\n\
 \n\
 --------------------------------------------------------------------------------"
+
+//////
+// May as well just shove this here.
+//////
+/obj/item/weapon/paper/mission_statement
+	name = "Mission Statement"
+	info = "\
+COVENANT HEGEMONY\n\
+\n\
+\n\
+Standard Supraluminal Communication Form\n\
+\n\
+\n\
+Use of supraluminal communication arrays is only to be performed by Obedientiaries or officers of similar position.\n\
+\n\
+--------------------------------------------------------------------------------\n\
+\n\
+--------------------------------------------------------------------------------\n\
+\n\
+Subject - Action Permission: Heresy Waiver\n\
+\n\
+Transmission - For the purpose of resource and artifact acquisition, the Shipmaster is to be left to their own devices. Any minor or major heresy committed towards the previously stated purpose is to be waived, and their operations are not to be interfered with unless requested or the Shipmaster is believed to be under fear of potential capture and destruction. The mission has been deemed important to the assigning Prophet \[Prophet Name Classified\].\n\
+\n\
+\n\
+--------------------------------------------------------------------------------\n\
+\n\
+--------------------------------------------------------------------------------"
