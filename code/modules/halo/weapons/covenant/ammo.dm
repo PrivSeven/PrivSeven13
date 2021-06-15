@@ -1,7 +1,7 @@
 #define NEEDLER_EMBED_PROB 66
 #define NEEDLER_SHARD_DET_TIME 10 SECONDS
-#define FUEL_ROD_IRRADIATE_RANGE 2
-#define FUEL_ROD_IRRADIATE_AMOUNT 15
+#define FUEL_ROD_IRRADIATE_RANGE 6
+#define FUEL_ROD_IRRADIATE_AMOUNT 35
 #define FUEL_ROD_MAX_OVERSHOOT 3
 
  // need icons for all projectiles and magazines
@@ -325,7 +325,7 @@
 
 /obj/item/projectile/bullet/fuel_rod/on_impact(var/atom/A)
 	new /obj/effect/plasma_explosion/green(get_turf(src))
-	explosion(A,-1,1,2,4,guaranteed_damage = 30, guaranteed_damage_range = 2)
+	explosion(A,-1,1,2,4,guaranteed_damage = 25, guaranteed_damage_range = 6)
 	for(var/mob/living/l in range(FUEL_ROD_IRRADIATE_RANGE,loc))
 		l.rad_act(FUEL_ROD_IRRADIATE_AMOUNT)
 	. = ..()

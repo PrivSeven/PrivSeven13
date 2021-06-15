@@ -27,12 +27,13 @@
 	title = "Marine Sergeant"
 	total_positions = 1
 	spawn_positions = 1
-	spawn_positions = 1.5
+	economic_modifier = 1.5
 	department_flag = COM
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e5
 	alt_titles = list(\
 		"Marine Staff Sergeant" = /decl/hierarchy/outfit/job/unsc/marine/e6,\
-		"Marine Gunnery Sergeant" = /decl/hierarchy/outfit/job/unsc/marine/e7)
+		"Marine Gunnery Sergeant" = /decl/hierarchy/outfit/job/unsc/marine/e7,\
+		"Marine Master Sergeant" = /decl/hierarchy/outfit/job/unsc/marine/e8)
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
 
 /datum/job/unsc/marine/iwo
@@ -40,7 +41,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	economic_modifier = 1.5
-	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/cwo2
+	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/wo2
 	alt_titles = list(\
-		"Warrant Officer")
+		"Master Gunnery Sergeant" = /decl/hierarchy/outfit/job/unsc/marine/e9,\
+		"Warrant Officer" = /decl/hierarchy/outfit/job/unsc/marine/wo)
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)

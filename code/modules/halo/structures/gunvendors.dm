@@ -16,21 +16,14 @@
 	icon_deny = "ironhammer-deny"
 	req_access = list(access_unsc_armoury)
 	products = list(/obj/item/ammo_magazine/m127_saphe = 20,
-					/obj/item/ammo_magazine/m127_saphe/m6h2 = 6,
-					/obj/item/ammo_magazine/m127_saphp = 20,
-					/obj/item/ammo_magazine/m127_saphp/m6h2 = 6,
 					/obj/item/ammo_magazine/m762_ap/MA5B = 25,
-					/obj/item/ammo_magazine/m762_ap/MA5B/TTR = 5,
-					/obj/item/ammo_magazine/m762_ap/M392 = 30,
-					/obj/item/ammo_magazine/m95_sap/br55 = 20,
-					/obj/item/ammo_magazine/m5 = 10,
-					/obj/item/ammo_magazine/m5/rubber = 5,
+					/obj/item/ammo_magazine/m762_ap/M392 = 5,
+					/obj/item/ammo_magazine/m95_sap/br55 = 10,
+					/obj/item/ammo_magazine/m5 = 15,
 					/obj/item/ammo_box/shotgun = 10,
 					/obj/item/ammo_box/shotgun/slug = 10,
-					/obj/item/ammo_box/shotgun/beanbag = 5,
 					/obj/item/weapon/material/knife/combat_knife = 15,
 					/obj/item/weapon/material/machete = 2,
-					/obj/item/weapon/gun/projectile/m6d_magnum/m6h = 2,
 					/obj/item/weapon/gun/projectile/m6d_magnum = 24,
 					/obj/item/weapon/gun/projectile/ma5b_ar = 15,
 					/obj/item/weapon/gun/projectile/br55 = 4,
@@ -365,3 +358,17 @@
 					/obj/item/weapon/storage/pill_bottle/dexalin_plus = 6,
 					/obj/item/weapon/storage/pill_bottle/inaprovaline = 6,
 					/obj/item/weapon/reagent_containers/hypospray = 3)
+
+/////////
+// Command
+/////////
+/obj/machinery/vending/armory/command
+	name = "Restricted Weapon and Ammunition Rack"
+	desc = "Storage for restricted weapons and ammunition"
+	icon_state ="ironhammer" // SPRITES
+	icon_deny = "ironhammer-deny"
+	req_access = list(access_unsc_officers)
+	products = list(/obj/item/ammo_magazine/m762_ap/MA5D = 12,
+					/obj/item/weapon/gun/projectile/ma5b_ar/ma5d_ar = 2,
+					/obj/item/weapon/gun/projectile/m6d_magnum/m6h = 2,
+					/obj/item/weapon/storage/box/vx7 = 8)

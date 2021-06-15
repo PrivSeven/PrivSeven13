@@ -25,7 +25,7 @@
 	#include "ai_items.dm"
 	#include "invasion_geminus.dm"
 
-	#include "geminuscity_4.dmm"
+//	#include "geminuscity_4.dmm"
 	#include "geminuscity_3.dmm"
 	#include "geminuscity_2.dmm"
 	#include "geminuscity_1.dmm"

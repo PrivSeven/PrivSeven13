@@ -437,10 +437,10 @@
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	check_armour = "bomb"
 	step_delay = 1.2
-	shield_damage = 200 //just below elite minor shields, meaning subsequent explosion and guaranteed damage will collapse it.
+	shield_damage = 600 //Go away. :)
 
 /obj/item/projectile/bullet/ssr/on_impact(var/atom/target)
-	explosion(target, 0, 1, 2, 4,guaranteed_damage = 50,guaranteed_damage_range = 2)
+	explosion(target, 0, 1, 2, 8,guaranteed_damage = 95,guaranteed_damage_range = 2)
 	..()
 
 /obj/item/weapon/storage/box/spnkr

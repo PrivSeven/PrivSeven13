@@ -24,17 +24,20 @@
 /turf/simulated/wall/drone_biomass/New(var/newloc)
 	. = ..(newloc,"drone biomass")
 
-/turf/simulated/wall/covenant/shield
+/turf/simulated/wall/shield
 	name = "Covenant Shielding"
 	desc = "An airtight shield. You have no chance of getting through this."
 	icon = 'icons/obj/machines/shielding.dmi'
 	icon_state = "shield_normal"
 
-/turf/simulated/wall/covenant/shield/ex_act(var/severity)
+/turf/simulated/wall/shield/New(var/newloc)
+	. = ..(newloc,"covenant shielding")
+
+/turf/simulated/wall/shield/ex_act(var/severity)
 	return
 
-/turf/simulated/wall/covenant/shield/bullet_act()
+/turf/simulated/wall/shield/bullet_act()
 	return
 
-/turf/simulated/wall/covenant/shield/attackby()
+/turf/simulated/wall/shield/attackby()
 	return

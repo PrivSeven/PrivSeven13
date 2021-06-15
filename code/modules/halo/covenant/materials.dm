@@ -136,3 +136,9 @@
 	name = "drone biomass"
 	display_name = "drone biomass"
 	icon_base = "diona"
+
+// Shield 'mats'. You shouldn't be able to see this in game.
+/material/drone_biomass
+	name = "covenant shielding"
+	display_name = "covenant shielding"
+	icon_base = "stone"

@@ -36,6 +36,21 @@
 	else
 		set_light(0)
 
+/////////
+// DTM
+/////////
+/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/dtm
+	name = "DTM-M90 Civilian Model"
+	desc = "A military shotgun redesigned for civilian use. Drops the pistol grip, reduces the number of maximum shells and is generally far more unwieldy. Has an inbuilt side mounted flashlight."
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_LARGE
+	icon_state = "m90dtm"//temp sprite until we get something decent.
+	item_state = "m90dtm"
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	max_shells = 6
+	fire_delay = 12
+	dispersion = list(0.75)
+
 //SOE Shotgun
 
 /obj/item/weapon/gun/projectile/shotgun/soe
@@ -74,8 +89,7 @@
 
 /obj/item/weapon/gun/projectile/shotgun/pump/m45_ts
 	name = "M45D tactical shotgun"
-	desc = "The UNSC's primary shotgun and one of the most effective close range infantry weapons used by front line forces. Has an inbuilt side mounted flashlight. \
-	Additionally, it also has an integrated smart choke."
+	desc = "The UNSC's primary shotgun and one of the most effective close range infantry weapons used by front line forces. Has an inbuilt side mounted flashlight."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "M45 TS"
 	item_state = "m45"

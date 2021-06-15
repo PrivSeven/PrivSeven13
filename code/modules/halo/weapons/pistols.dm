@@ -162,7 +162,7 @@
 	name = "\improper M6H Magnum"
 	icon_state = "m6g"//temp sprites to present a difference
 	item_state = "m6g"
-	desc = "Standard issue sidearm, capable of loading the older eight round magazines. Chambered in the powerful 12.7mm caliber."
+	desc = "A restricted, limited run sidearm, capable of loading the older eight round magazines. Chambered in the powerful 12.7mm caliber."
 
 /obj/item/weapon/gun/projectile/m6d_magnum/m6h2
 	name = "\improper M6H2 Magnum"

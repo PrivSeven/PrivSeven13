@@ -1465,6 +1465,8 @@
 #include "code\modules\halo\clothing\urf_commando_sets.dm"
 #include "code\modules\halo\clothing\armor_repair\armor_patch.dm"
 #include "code\modules\halo\clothing\armor_repair\repair_bench.dm"
+#include "code\modules\halo\colonist\inv_jobs.dm"
+#include "code\modules\halo\colonist\inv_outfits.dm"
 #include "code\modules\halo\colonist\jobs.dm"
 #include "code\modules\halo\colonist\outfits.dm"
 #include "code\modules\halo\comms\__readme_defines.dm"
