@@ -12,15 +12,15 @@
 	return
 
 /client/verb/forum()
-	set name = "forum"
-	set desc = "Visit the forum."
+	set name = "discord"
+	set desc = "Visit the Discord."
 	set hidden = 1
 	if( config.forumurl )
-		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")=="No")
+		if(alert("This will open the Discord in your browser. Are you sure?",,"Yes","No")=="No")
 			return
 		src << link(config.forumurl)
 	else
-		to_chat(src, "<span class='warning'>The forum URL is not set in the server configuration.</span>")
+		to_chat(src, "<span class='warning'>The Discord URL is not set in the server configuration.</span>")
 	return
 
 #define RULES_FILE "config/rules.html"

@@ -10,6 +10,8 @@
 //	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
+	intro_blurb = "You are a the Shipmaster, a being of incredible station and power. You've been tasked with finding and securing any possible forerunner artefacts.\
+	Brief your crew before going underway to find such things."
 
 /datum/job/covenant/sangheili_ultra
 	title = "Sangheili Ultra"
@@ -20,6 +22,7 @@
 //	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
+	intro_blurb = "You are the most skilled warrior aboard the vessel, a being of incredible honor. Obey your shipmaster."
 
 /datum/job/covenant/sangheili_honour_guard
 	title = "Sangheili Honour Guard"
@@ -41,6 +44,7 @@
 //	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
+	intro_blurb = "You are a Major, an officer and warrior aboard the vessel. Obey your shipmaster and relay orders to those below your station."
 
 /datum/job/covenant/sangheili_minor
 	title = "Sangheili Minor"
@@ -50,6 +54,7 @@
 	access = list(access_covenant, access_covenant_command)
 //	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
+	intro_blurb = "You are a Minor, a warrior aboard the vessel. Obey those above your station, while ordering those below it."
 
 
 

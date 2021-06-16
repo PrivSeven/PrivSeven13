@@ -141,6 +141,10 @@
 	display_name = "veteran hat"
 	path = /obj/item/clothing/head/soft/veteranhat
 
+/datum/gear/head/utilitygreen
+	display_name = "marine utility cover"
+	path = /obj/item/clothing/head/utility/marine/green
+
 /datum/gear/head/welding/New()
 	..()
 	var/welding_masks = list()

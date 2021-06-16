@@ -61,7 +61,7 @@
 		//left wall
 		var/walltype = /turf/simulated/wall/tech
 		if(prob(33))
-			walltype = pick(/turf/simulated/mineral, /turf/simulated/floor/plating, /turf/simulated/floor/water)
+			walltype = pick(/turf/simulated/mineral/planet, /turf/simulated/floor/plating, /turf/simulated/floor/water)
 		else if(cur_length % light_intervals == 0)
 			//check if we can place a light here
 			lightdirs.Add(leftdir)
@@ -77,7 +77,7 @@
 		//right wall
 		walltype = /turf/simulated/wall/tech
 		if(prob(33))
-			walltype = pick(/turf/simulated/mineral, /turf/simulated/floor/plating, /turf/simulated/floor/water, /turf/simulated/floor/water/shallow)
+			walltype = pick(/turf/simulated/mineral/planet, /turf/simulated/floor/plating, /turf/simulated/floor/water, /turf/simulated/floor/water/shallow)
 		else if(cur_length % light_intervals == 0)
 			//check if we can place a light here
 			lightdirs.Add(rightdir)

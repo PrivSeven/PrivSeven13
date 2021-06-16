@@ -678,6 +678,15 @@
 	desc = "Insignia denoting the elusive rank of Warant Officer."
 	icon_state = "fleetrank_officer"
 
+/obj/item/clothing/accessory/rank/fleet/officer/wo
+	name = "ranks (WO)"
+	desc = "Insignia denoting the elusive rank of Warant Officer."
+	icon_state = "fleetrank_officer"
+
+/obj/item/clothing/accessory/rank/fleet/officer/wo2
+	name = "ranks (WO-2)"
+	desc = "Insignia denoting the elusive rank of Warant Officer."
+	icon_state = "fleetrank_officer"
 
 //Necklaces
 /obj/item/clothing/accessory/necklace

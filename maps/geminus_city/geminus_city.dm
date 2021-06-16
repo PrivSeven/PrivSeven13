@@ -25,13 +25,15 @@
 	#include "ai_items.dm"
 	#include "invasion_geminus.dm"
 
-	#include "geminuscity_4.dmm"
+//	#include "geminuscity_4.dmm"
 	#include "geminuscity_3.dmm"
 	#include "geminuscity_2.dmm"
 	#include "geminuscity_1.dmm"
 
 //	#include "../faction_bases/complex046/complex046.dm"
 	#include "../faction_bases/complex046/complex046_area.dm"
+
+//	#include "../UNSC_Bertels/includes.dm"
 
 #elif !defined(MAP_OVERRIDE)
 

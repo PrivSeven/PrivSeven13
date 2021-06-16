@@ -203,6 +203,8 @@
 //	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi' //Doesn't have custom sprites as of yet. Sorry.
 //	icon_state = "MA5-Base-Empty"
 //	item_state = "MA5D"
+	icon_state = "MA37"
+	item_state = "ma37"
 	magazine_type = /obj/item/ammo_magazine/m762_ap/MA5D
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_ap/MA5D)
 
