@@ -24,7 +24,7 @@
 		"Infantry Assaultman")
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/e4
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
-	intro_blurb = "You are a rank and file Grunt, albeit one that has some seniority. Grab your specialised equipment from the armoury.\
+	intro_blurb = "You are a rank and file Grunt, albeit one that has some seniority. Grab your specialised equipment from the armoury. \
 	Listen to your Sergeant, or generally anyone above your station while trying not to die. Ride a pelican to the mission area after a possible briefing from the Commander."
 
 /datum/job/unsc/marine/squad_leader

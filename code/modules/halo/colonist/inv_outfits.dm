@@ -2,9 +2,10 @@
 /decl/hierarchy/outfit/job/invasion_citizen
 	name = "Colonist Survivor"
 
-	back = /obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/dtm
+	belt = /obj/item/weapon/gun/projectile/m6d_magnum/m6b
 	pda_slot = null
 	l_pocket = /obj/item/device/radio
+	r_pocket = /obj/item/ammo_magazine/r127
 
 	flags = 0
 

@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/great_white
-	name = "great white shark"
-	desc = "Apex underwater predator."
+	name = "great white land shark"
+	desc = "Apex land predator."
 	icon = 'code/modules/halo/misc/animals/animal_big.dmi'
 	icon_state = "greatwhite_above"
 	icon_living = "greatwhite_above"

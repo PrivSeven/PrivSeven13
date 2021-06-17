@@ -10,7 +10,7 @@
 //	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command)
-	intro_blurb = "You are a the Shipmaster, a being of incredible station and power. You've been tasked with finding and securing any possible forerunner artefacts.\
+	intro_blurb = "You are a the Shipmaster, a being of incredible station and power. You've been tasked with finding and securing any possible forerunner artefacts. \
 	Brief your crew before going underway to find such things."
 
 /datum/job/covenant/sangheili_ultra
