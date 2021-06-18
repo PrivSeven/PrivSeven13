@@ -14,6 +14,7 @@
 		/datum/job/unsc_ai,\
 		/datum/job/covenant/AI,\
 		/datum/job/covenant/huragok,\
+		/datum/job/covenant/mgalekgolo,\
 		/datum/job/covenant/sangheili_minor,\
 		/datum/job/covenant/sangheili_major,\
 		/datum/job/covenant/sangheili_ultra,\
