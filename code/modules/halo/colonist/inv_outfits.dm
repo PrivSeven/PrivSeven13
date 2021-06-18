@@ -4,7 +4,7 @@
 
 	belt = /obj/item/weapon/gun/projectile/m6d_magnum/m6b
 	pda_slot = null
-	l_pocket = /obj/item/device/radio
+	l_pocket = /obj/item/device/flashlight/flare
 	r_pocket = /obj/item/ammo_magazine/r127
 
 	flags = 0
