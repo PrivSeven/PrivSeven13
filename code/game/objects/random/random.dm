@@ -349,6 +349,33 @@
 				/obj/item/ammo_magazine/m762_ap = 1,
 				/obj/item/ammo_magazine/m95_sap = 1)
 
+/obj/random/colfirearm
+	name = "Random Colonist Firearm"
+	desc = "This is a random firearm."
+	icon = 'icons/obj/gun.dmi'
+	icon_state = "secgundark"
+
+/obj/random/colfirearm/spawn_choices()
+	return list(/obj/item/weapon/gun/projectile/m6d_magnum/m6b = 3,
+				/obj/item/weapon/gun/projectile/m6d_magnum/m6b/police = 2,
+				/obj/item/weapon/gun/projectile/m6d_magnum = 2,
+				/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/dtm = 1)
+
+/obj/random/colammo
+	name = "Random Colonist Ammunition"
+	desc = "This is random ammunition."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "45-10"
+
+/obj/random/colammo/spawn_choices()
+	return list(/obj/item/weapon/storage/box/beanbags = 4,
+				/obj/item/weapon/storage/box/shotgunammo = 3,
+				/obj/item/weapon/storage/box/shotgunshells = 4,
+				/obj/item/ammo_magazine/m127_saphe = 1,
+				/obj/item/ammo_magazine/m127_saphp = 3,
+				/obj/item/ammo_magazine/m762_ap = 1,
+				/obj/item/ammo_magazine/m95_sap = 1)
+
 /obj/random/action_figure
 	name = "random action figure"
 	desc = "This is a random action figure."

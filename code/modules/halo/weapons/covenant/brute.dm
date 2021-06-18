@@ -438,9 +438,37 @@
 /obj/item/weapon/grenade/toxic_gas/carbon_monodixe
 	name = "carbon monodixe gas grenade"
 
+/////////
+// VX
+/////////
+/obj/item/weapon/grenade/vx
+	name = "VX7 gas grenade"
+
+/obj/item/weapon/grenade/vx/New()
+	. = ..()
+	create_reagents(500)
+	reagents.add_reagent(/datum/reagent/toxin/vx, 500)
+
+/obj/item/weapon/grenade/vx/detonate()
+	playsound(src.loc, 'sound/effects/smoke.ogg', 50, 1)
+
+	var/datum/effect/effect/system/smoke_spread/chem/vx = new()
+	vx.set_up(reagents, 10, 0, src.loc)
+	vx.start()
+	for(var/mob/living/M in range(7, src))
+		if(M.wear_mask && (M.wear_mask.flags & BLOCK_GAS_SMOKE_EFFECT))
+			continue
+		M.adjustToxLoss(125)
+
+	if(istype(loc, /mob/living/carbon))		//drop dat grenade if it goes off in your hand
+		var/mob/living/carbon/C = loc
+		C.drop_from_inventory(src)
+		C.throw_mode_off()
+	qdel(src)
+
 //temp container
 /obj/item/weapon/storage/box/vx7
 	name = "box of chemical grenades"
-	desc = "A box containing 7 grenades. A gas mask is printed on the label.<br> WARNING: Exposure carries risk of death."
+	desc = "A box containing 7 grenades. A gas mask is printed on the label.<br> WARNING: Exposure carries risk of death, for both skin contact and inhalation. </br>"
 	icon_state = "flashbang"
-	startswith = list(/obj/item/weapon/grenade/toxic_gas = 7)
+	startswith = list(/obj/item/weapon/grenade/vx = 7)

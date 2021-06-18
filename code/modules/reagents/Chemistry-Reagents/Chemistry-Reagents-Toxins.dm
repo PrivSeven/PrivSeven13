@@ -655,3 +655,16 @@
 		var/mob/living/carbon/human/H = M
 		H.zombieze()
 	remove_self(volume)
+
+/datum/reagent/toxin/vx
+	name = "odd chemical"
+	description = "An odd chemical in its liquid form."
+	taste_mult = 1.5
+	reagent_state = LIQUID
+	color = "#FF3300"
+	strength = 30
+	touch_met = 5
+
+/datum/reagent/toxin/vx/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
+	M.take_organ_damage(0, removed * 0.2)
+	M.pl_effects()

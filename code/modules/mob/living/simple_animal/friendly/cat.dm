@@ -263,6 +263,9 @@
 	icon_dead = "reno-dead"
 	var/friend_name = "Erstatz Vryroxes"
 
+/mob/living/simple_animal/cat/fluff/reno/standard
+	name = "Captain Reno"
+	desc = "That's Reno the Cat! Or is it a raccoon? Regardless, he has authority."
 
 /mob/living/simple_animal/cat/fluff/walaski
 	name = "Walaski"
