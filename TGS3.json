@@ -1,22 +1,9 @@
 {
-    "documentation": "Privateer Seven config for TGS3.",
-    "changelog": {
-      "script": "tools/GenerateChangelog/ss13_genchangelog.py",
-      "arguments": "html/changelog.html html/changelogs",
-      "pip_dependancies": [
-        "PyYaml",
-        "beautifulsoup4"
-      ]
-    },
-    "synchronize_paths": [
-      "html/changelog.html",
-      "html/changelogs/*"
-    ],
+    "documentation": "/tg/station server 3 configuration file",
+    "synchronize_paths": [],
     "static_directories": [
       "config",
       "data"
     ],
-    "dlls": [
-      "libmysql.dll"
-    ]
+    "dlls": []
   }
