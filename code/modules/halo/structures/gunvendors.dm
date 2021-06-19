@@ -371,4 +371,4 @@
 	products = list(/obj/item/ammo_magazine/m762_ap/MA5D = 12,
 					/obj/item/weapon/gun/projectile/ma5b_ar/ma5d_ar = 2,
 					/obj/item/weapon/gun/projectile/m6d_magnum/m6h = 2,
-					/obj/item/weapon/storage/box/vx7 = 8)
+					/obj/item/weapon/grenade/vx = 2)
